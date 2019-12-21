@@ -5,20 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Media Queries-->
 
         <title>Kellan Cerveny Home</title>
-        <link rel="stylesheet" type="text/css" href="KC-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="KC-mobile-style.css">
         <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Corben|Libre+Barcode+39|Montserrat|Overpass|Quicksand&display=swap" rel="stylesheet">
         <!--Favicon at the top of browser tab-->
-        <link rel="shortcut icon" href="Images/KC_Logo.jpg" type="image/x-icon" />
+        <link rel="shortcut icon" href="Images/KC.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/1f156684a3.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <section id="imgback">
             <header id="home-head">
-                <div id="navbar">
+                <!--Mobile Navigation Bar-->
+                <div class="topnav mobile">
+                    <a href="#home" class="active"><img id="mobile-icon" src="Images/KC.png"></a>
+                    <div id="myLinks">
+                      <a href="#news">Resume</a>
+                      <a href="#contact">Portfolio</a>
+                      <a href="#about">About</a>
+                      <a href="#about">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars fa-2x"></i>
+                    </a>
+                </div>
+                <!--Desktop Navigation Bar-->
+                <div id="navbar" class="desktop">
                         <div id="icon-div">
                             <!-- REMEMBER: fix the icon link to go to the home page -->
-                            <a href="#foot-div" id="icon-wrapper"><img id="icon" src="Images/KC_Logo.jpg" alt="KellanCerveny"></a>
+                            <a href="#foot-div" id="icon-wrapper"><img id="logo" src="Images/KC_skinny.png" alt="KellanCerveny"></a>
                         </div>
                         <div id="nav-div">
                             <a href="google.com">Resume</a>
@@ -46,8 +61,11 @@
                             <img src="https://media.newyorker.com/photos/5a82035156b75c08a3e5b5b4/master/w_727,c_limit/Cunningham-Obama-Kehinde-Wiley.jpg" alt="Obama" id="obamaimg">
                         </div>
                         <div>
-                            <h1>Impactful quote here <---</h1>
-                            <p>This is a good place to explain all of the things going on related to the image to the left. This is a paragraph explaining your ambitions and goals. Why do you get up in the morning? What is the most serious thing in the world to you? Maybe add something funny. Also, how do you indent paragraphs on a website? Is there an escaped tab character to use?</p>
+                            <h2>The only real failure in life is not to be true to the best one knows.<br>&nbsp;&nbsp;- Siddartha Gautama</h2>
+                            <p>This is a good place to explain all of the things going on related to the image to the left.
+                                This is a paragraph explaining your ambitions and goals. Why do you get up in the morning?
+                                What is the most serious thing in the world to you? Maybe add something funny.
+                                Also, how do you indent paragraphs on a website? Is there an escaped tab character to use?</p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +73,11 @@
             <section id="idoit">
                 <div class="row">
                     <div class="contents">
-                        <h1>A little bit about my skillset</h1>
+                        <h1>A bit about my skillset</h1>
+                        <p>This is a good place to explain all of the things going on related to the image to the left.
+                            This is a paragraph explaining your ambitions and goals. Why do you get up in the morning?
+                            What is the most serious thing in the world to you? Maybe add something funny.
+                            Also, how do you indent paragraphs on a website? Is there an escaped tab character to use?</p>
                     </div>
                 </div>
             </section>
@@ -83,5 +105,16 @@
                 </div>
             </div>
         </footer>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
     </body>
 </html>

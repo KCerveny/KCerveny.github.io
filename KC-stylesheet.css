@@ -40,25 +40,28 @@ p {
     width: 85%;
     min-width: 85%; /*SOLUTION to big-zoom problem? */
     display: flex;
-    flex-flow: row no-wrap;
+    flex-flow: row wrap;
     justify-content: center;
     /* border: solid orange; */
 } 
-.contents div {
-    width: 30%;
-    padding: 0.5em 2em;
-    /* border: solid black; */
-}
 
 /* ~~~~~~~~~~~
 Header Section
 ~~~~~~~~~~~ */
-#imgback {
+.intro_image {
     height: 100vh; 
     width: 100%;
-    background-image: url(https://media1.tenor.com/images/b81c8e7c84d6dcfa5d23fa51c75d7a57/tenor.gif?itemid=11500074);
     background-size: cover;
     background-repeat: no-repeat;
+}
+#imgback {
+    background-image: url(https://media1.tenor.com/images/b81c8e7c84d6dcfa5d23fa51c75d7a57/tenor.gif?itemid=11500074);
+}
+#filter {
+    height: 100vh;
+    width: 100%;
+    /* backdrop-filter: brightness(40%); Makes the background gif darker, easier to see text. May only work on Chrome */
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1));
 }
 #home-head {
     display: flex;
@@ -192,7 +195,7 @@ Page Header Statement
     margin: 0;
     font-size: 2.5em;
     line-height: 1.9em;
-    color: #f3cb4f;
+    color: whitesmoke;
 }
 /* ~~~~~~~~~~~
 Portrait Section
@@ -208,12 +211,19 @@ Portrait Section
     justify-content: center;
     align-content: center;
 }
-#big-zoom div {
-    width: auto;
+#big-zoom .contents div {
+    width: 100%;
+    padding: 0.5em 2em;
 }
-#big-zoom h2 {color: #EF5728;}
-#big-zoom p {color: black;}
-#obamaimg {
+#big-zoom h2 {
+    color: #071c30;
+    /* font-family: cursive; */
+}
+#big-zoom p {
+    color: black;
+    line-height: 2em;
+}
+#portrait {
     max-width: 100%;
     max-height: 100%;
     padding: 0 10%;
@@ -234,6 +244,20 @@ Portrait Section
 }
 #idoit *{
     color: #5e727c;
+}
+.threecol {
+    width: 100%;
+    margin: 3em auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: none;
+}
+.threecol div {
+    width: 100%;
+    padding: 10px;
+    border-left: 3px solid #EF5728;
+    text-align: center;
 }
 
 /* ~~~~~~~~~~~
@@ -319,8 +343,45 @@ footer a:hover {
     color: #ef5728;
     transition: ease-in-out 370ms;
 }
+#bumble {
+    height: 2em;
+    /* border: solid white; */
+    margin: 10px auto;
+}
+
+/* RESUME PAGE 
+###############
+###############
+############ */
+#resumeback {
+    background-image: url(Images/guitar_lake.jpg) ;
+}
+/* SECTION ID: resume */
+#resume {
+    font-size: 1.5em;
+}
+.res-section {
+    width: 100%; 
+    display: flex;
+    flex-flow: row nowrap;
+}
+.res-title {
+    width: 40%; 
+    padding: 0 2em;
+}
+.res-items {
+    width: 60%;
+    line-height: 1.2em;
+    padding: 0 1em;
+}
+h5 {font-weight: bold;}
+/* SECTION ID: action */
+#action {background-color: #5e727c;} /*Obviously this color needs to be changed */
 
 
+
+
+/* ####################################################################################################################### */
 /* MOBILE MEDIA QUERY */
 /* Search what is an appropriate max width for this,
    why does it not appear to change on the chrome simulation?
@@ -361,6 +422,15 @@ footer a:hover {
     #big-zoom .contents div {
         width: 40%;
         padding: 1em;
+    }
+    /* IDOIT Section */
+    .threecol {
+        flex-flow: row wrap;
+        align-items:stretch;
+        justify-content: space-between;
+    }
+    .threecol div {
+        width: 30%;
     }
 }
         

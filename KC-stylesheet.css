@@ -173,7 +173,9 @@ header a { /* Defines the stylings for all links in the header bar */
     text-align: center;
 }
 #contact-div a:hover {
-    background-color: rgba(220,220,220,1);
+    background-color: #ef5728;
+    border-color: transparent;
+    color: whitesmoke;
 }
 /* 
 Page Header Statement
@@ -269,8 +271,7 @@ footer {
 }
 footer .contents {
     flex-flow: column wrap;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px; 
 }
 footer *{
     color: whitesmoke;
@@ -299,7 +300,6 @@ footer h1 {
     font-weight: normal;
     text-decoration: none;
 }
-
 #soc-intro {
     margin-bottom: 10px;
     color: whitesmoke;
@@ -349,12 +349,11 @@ footer a:hover {
     margin: 10px auto;
 }
 
-/* RESUME PAGE 
-###############
-###############
+/* ############
+   RESUME PAGE 
 ############ */
 #resumeback {
-    background-image: url(Images/guitar_lake.jpg) ;
+    background-image: url(Images/guitar_lake.JPG);
 }
 /* SECTION ID: resume */
 #resume {
@@ -363,23 +362,63 @@ footer a:hover {
 .res-section {
     width: 100%; 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 }
 .res-title {
-    width: 40%; 
-    padding: 0 2em;
+    width: 100%; 
+    padding: 0 1em;
+    margin-top: 2em;
 }
 .res-items {
-    width: 60%;
+    width: 100%;
     line-height: 1.2em;
     padding: 0 1em;
 }
-h5 {font-weight: bold;}
+h5 {font-weight: bold; margin-bottom: 3px;}
+.res-items p {margin-top: 3px; font-size: 0.8em;}
+.res-items ul {font-family: Quicksand; font-size: 0.8em; margin-top: 3px;}
+
 /* SECTION ID: action */
-#action {background-color: #5e727c;} /*Obviously this color needs to be changed */
+#action {background-color: #FCF8F3; text-align: center;} /*Obviously this color needs to be changed */
+#action .contents {flex-flow: column nowrap; justify-content: space-evenly; align-content: center;}
+#plink {display: auto; margin: 2em;}
+#action a {text-decoration: none; font-family: Quicksand, sans-serif; border: 1px solid; padding: 10px 20px;}
+#action a:hover {color: #FCF8F3; background-color:#ef5728; transition: ease-in-out 400ms;}
+.threegallery {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.threegallery img {
+    width: 90%;
+    height: 35vh;
+    margin: 1em;
+}
+/* ############
+   PORTFOLIO PAGE 
+############ */
 
-
-
+/* ############
+   ABOUT PAGE 
+############ */
+#aboutback {background-image: url(Images/kaweah.JPG);}
+#spirit {background-color:#071c30;}
+#spirit .contents {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+#spirit .contents div {width: 100%; padding: 0.5em 2em;}
+#spirit h2 {color: #f3cb4f;}
+#spirit p {color: whitesmoke; line-height: 2em;}
+#portrait {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 10%;
+    margin: auto;
+}
 
 /* ####################################################################################################################### */
 /* MOBILE MEDIA QUERY */
@@ -432,5 +471,32 @@ h5 {font-weight: bold;}
     .threecol div {
         width: 30%;
     }
+    /* ############
+      RESUME PAGE 
+    ############ */
+    .res-section {flex-flow: row nowrap;}
+    .res-title {width: 40%;}
+    .res-items {width: 60%;}
+    .threegallery{
+        flex-flow: row nowrap;
+    }
+    .threegallery img {width: 25%;}
+    /* ############
+      PORTFOLIO PAGE 
+    ############ */
+
+    /* ############
+      ABOUT PAGE 
+    ############ */
+    #spirit .contents {
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    #spirit .contents div {
+        width: 40%;
+        padding: 1em;
+    }
+
 }
         

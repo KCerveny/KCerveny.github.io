@@ -17,7 +17,8 @@ P: Quicksand
 Links/Deco: Montserrat
 */
 h1, h2, h3, h4, h5 {
-    font-family: Overpass, serif;
+    font-family: "Libre Baskerville", serif, sans-serif;
+    font-weight: normal;
 }
 h1 {
     font-size: 7vw; /* ONLY to be used on the mobile version */
@@ -43,7 +44,13 @@ p {
     flex-flow: row wrap;
     justify-content: center;
     /* border: solid orange; */
-} 
+}
+.button {
+    font-size: 1.1em;
+    font-family: Questrial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
 
 /* ~~~~~~~~~~~
 Header Section
@@ -120,10 +127,6 @@ Main Header Bar
     max-width: 1600px;
 }
 header a { /* Defines the stylings for all links in the header bar */
-    font-size: 1em;
-    font-family: Quicksand, Arial, sans-serif;
-    font-weight: normal;
-    text-decoration: none;
     color: white;
 }
 .desktop a:hover{
@@ -167,9 +170,9 @@ header a { /* Defines the stylings for all links in the header bar */
     justify-content: flex-end;
 }
 #contact-div a {
-    border: 1px solid white;
+    border: 1px solid #ef5728;
     margin-right: 5em;
-    padding: .3em;
+    padding: 8px 16px;
     text-align: center;
 }
 #contact-div a:hover {
@@ -295,9 +298,9 @@ footer h1 {
     margin: 1em;
     padding: .3em;
     text-align: center;
-    font-size: 1em;
-    font-family: Quicksand, sans-serif; /* Arial looks good */
-    font-weight: normal;
+    font-size: 1.2em;
+    font-family: "Questrial", sans-serif; /* Arial looks good */
+    font-weight: 400;
     text-decoration: none;
 }
 #soc-intro {
@@ -379,10 +382,11 @@ h5 {font-weight: bold; margin-bottom: 3px;}
 .res-items ul {font-family: Quicksand; font-size: 0.8em; margin-top: 3px;}
 
 /* SECTION ID: action */
-#action {background-color: #FCF8F3; text-align: center;} /*Obviously this color needs to be changed */
+#action {background-color: whitesmoke; text-align: center;} /*Obviously this color needs to be changed */
 #action .contents {flex-flow: column nowrap; justify-content: space-evenly; align-content: center;}
 #plink {display: auto; margin: 2em;}
-#action a {text-decoration: none; font-family: Quicksand, sans-serif; border: 1px solid; padding: 10px 20px;}
+#action h2 {font-size: 2.5em;}
+#action a {text-decoration: none; font-family: Quicksand, sans-serif; border: 1px solid #EF5728; color:#071c30; padding: 10px 20px;}
 #action a:hover {color: #FCF8F3; background-color:#ef5728; transition: ease-in-out 400ms;}
 .threegallery {
     width: 100%;
@@ -395,6 +399,7 @@ h5 {font-weight: bold; margin-bottom: 3px;}
     width: 90%;
     height: 35vh;
     margin: 1em;
+    border: 1px solid #5e727c;
 }
 /* ############
    PORTFOLIO PAGE 
@@ -418,6 +423,43 @@ h5 {font-weight: bold; margin-bottom: 3px;}
     max-height: 100%;
     padding: 0 10%;
     margin: auto;
+}
+#layingpic {width:70%;}
+.jagged img{
+    height: 40vh; /*May not need this at all*/
+    border: 1px solid #5e727c;
+}
+#lowpic {margin-top: 20vh;}
+
+
+/* ############
+   CONTACT PAGE 
+############ */
+#formdiv {width: 85%; flex-flow: column wrap; background-color: white; border: 1px solid #5e727c; padding: 1em;}
+form {color: #5e727c;}
+form legend {font-size: 2em; margin-bottom: 1em; color: #071c30; text-align: center;}
+.fullwidth {width: 100%; margin-bottom: 2em;}
+.halfwidth {width: 100%;}
+.describe{color: orangered; font-size: 0.7em;}
+.adjacent {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; margin-bottom: 2em;}
+.halfdiv {width: 45%;}
+#submitdiv {margin: 2em 0; width: 100%; display: flex; justify-content: center;}
+#submitform {
+    padding: 15px 30px;
+    background-color: white;
+    color: #ef5728;
+    border: 1px solid #EF5728;
+}
+
+#submitform:hover {background-color: #ef5728; color:white; transition: ease-in-out 330ms;}
+abbr {text-decoration: none;}
+form label {font-family: "Libre Baskerville", serif, sans-serif;}
+textarea {min-width: 100%; max-width: 100%;} /*Keeps the text box from being dragged to be larger than the page.*/
+input, textarea {font-family: Quicksand, monospace;  color: black;} /*Determines the fonts used to label each input */
+input:focus, textarea:focus{
+    outline: none !important;
+    border: 1px solid #f3cb4f;
+    box-shadow: 0;
 }
 
 /* ####################################################################################################################### */

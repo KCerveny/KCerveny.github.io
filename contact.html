@@ -6,7 +6,7 @@
 
         <title>Kellan Cerveny Home</title>
         <link rel="stylesheet" type="text/css" href="KC-stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Corben|Libre+Barcode+39|Montserrat|Overpass|Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Libre+Baskerville|Montserrat|Overpass|Quicksand&display=swap" rel="stylesheet">
         <!--Favicon at the top of browser tab-->
         <link rel="shortcut icon" href="Images/KC_skinny.png" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,17 +14,17 @@
     </head>
 
     <body>
-        <section id="imgback">
+        <section id="aboutback" class="intro_image">
             <div id="filter">
                 <header id="home-head">
                     <!--Mobile Navigation Bar-->
                     <div class="topnav mobile">
                         <a href="index.html" class="active"><img id="mobile-icon" src="Images/KC_skinny.png"></a>
                         <div id="myLinks">
-                        <a href="resume.html">Resume</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="resume.html" class="button">Resume</a>
+                        <a href="portfolio.html" class="button">Portfolio</a>
+                        <a href="about.html" class="button">About</a>
+                        <a href="contact.html" style="color:#EF5728" class="button">Contact</a>
                         </div>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars fa-2x"></i>
@@ -37,17 +37,17 @@
                                 <a href="index.html" id="icon-wrapper"><img id="logo" src="Images/KC_skinny.png" alt="KellanCerveny"></a>
                             </div>
                             <div id="nav-div">
-                                <a href="resume.html">Resume</a>
-                                <a href="portfolio.html">Portfolio</a>
-                                <a href="about.html">About</a>
+                                <a href="resume.html" class="button">Resume</a>
+                                <a href="portfolio.html" class="button">Portfolio</a>
+                                <a href="about.html" class="button">About</a>
                             </div>
                             <div id="contact-div">
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.html" class="button" style="background-color:#EF5728;border:transparent;">Contact</a>
                             </div>
                     </div>
                     <div id="statement">
                         <div class="bigword">
-                            <h1>Creator.<br>Developer.<br>Entreprenuer.</h1>
+                            <h1>Reach out to<br>me today.</h1>
                         </div>
                     </div>
                 </header>
@@ -56,30 +56,34 @@
 
         <!-- Beginning of Main Body content -->
         <main>
-            <section id="big-zoom">
+            <section>
                 <div class="row">
                     <div class="contents">
-                        <div>
-                            <img src="https://media.newyorker.com/photos/5a82035156b75c08a3e5b5b4/master/w_727,c_limit/Cunningham-Obama-Kehinde-Wiley.jpg" alt="Obama" id="obamaimg">
+                        <div id="formdiv">
+                            <form id="contact-form" name="input" method="POST" action="https://formspree.io/kjcerveny@gmail.com">
+                                <legend>Shoot me a message.</legend>
+                                <label for="firstname lastname">Full Name <abbr title="required">*</abbr></label><br>
+                                <div class="adjacent">
+                                    <div class="halfdiv">
+                                        <input type="text" name="firstname" id="firstname" class="halfwidth" required><br>
+                                        <label for="firstname"><span class="describe">First Name</span></label><br>
+                                    </div>
+                                    <div class="halfdiv">
+                                        <input type="text" name="lastname" id="lastname" class="halfwidth" required><br>
+                                        <label for="lastname"><span class="describe">Last Name</span></label><br>
+                                    </div>
+                                </div>
+                                <label for="email">Email <abbr title="required">*</abbr></label><br>
+                                <input type="email" name="email" id="email" class="fullwidth" required><br>
+                                <label for="company">Company</label><br>
+                                <input type="text" name="company" id="company" class="fullwidth"><br>
+                                <label for="message">Message <abbr title="required">*</abbr></label><br>
+                                <textarea width="100%" rows="10" id="message" class="fullwidth" required></textarea><br>
+                                <div id="submitdiv">
+                                    <input type="submit" value="Send Message" id="submitform" class="button">
+                                </div>                            
+                            </form>
                         </div>
-                        <div>
-                            <h2>The only real failure in life is not to be true to the best one knows.<br>&nbsp;&nbsp;- Siddartha Gautama</h2>
-                            <p>This is a good place to explain all of the things going on related to the image to the left.
-                                This is a paragraph explaining your ambitions and goals. Why do you get up in the morning?
-                                What is the most serious thing in the world to you? Maybe add something funny.
-                                Also, how do you indent paragraphs on a website? Is there an escaped tab character to use?</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="idoit">
-                <div class="row">
-                    <div class="contents">
-                        <h1>A bit about my skillset</h1>
-                        <p>This is a good place to explain all of the things going on related to the image to the left.
-                            This is a paragraph explaining your ambitions and goals. Why do you get up in the morning?
-                            What is the most serious thing in the world to you? Maybe add something funny.
-                            Also, how do you indent paragraphs on a website? Is there an escaped tab character to use?</p>
                     </div>
                 </div>
             </section>
@@ -89,10 +93,10 @@
                 <div class="contents">
                         <h1>Let's build something.</h1>
                         <div id="foot-div">
-                                <a href="resume.html">Resume</a>
-                                <a href="portfolio.html">Portfolio</a>
-                                <a href="about.html">About</a>
-                                <a href="contact.html"> Contact</a>
+                                <a href="resume.html" class="button">Resume</a>
+                                <a href="portfolio.html" class="button">Portfolio</a>
+                                <a href="about.html" class="button">About</a>
+                                <a href="contact.html" class="button"> Contact</a>
                         </div>
                         <p id="soc-intro">Find me hanging around the internet</p>
                         <!-- Later will include icons to each platform, will need to use a flexbox -->

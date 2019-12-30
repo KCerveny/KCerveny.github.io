@@ -42,7 +42,7 @@
                                 <a href="about.html" class="button">About</a>
                             </div>
                             <div id="contact-div">
-                                <a href="contact.html" class="button" style="background-color:#EF5728;border:transparent;">Contact</a>
+                                <a href="contact.html" class="button" style="background-color:#EF5728;">Contact</a>
                             </div>
                     </div>
                     <div id="statement">
@@ -56,7 +56,7 @@
 
         <!-- Beginning of Main Body content -->
         <main>
-            <section>
+            <section id="contact">
                 <div class="row">
                     <div class="contents">
                         <div id="formdiv">
@@ -75,10 +75,12 @@
                                 </div>
                                 <label for="email">Email <abbr title="required">*</abbr></label><br>
                                 <input type="email" name="email" id="email" class="fullwidth" required><br>
+                                <label for="phone">Phone</label><br>
+                                <input type="tel" name="phone" id="phone" class="fullwidth"><br>
                                 <label for="company">Company</label><br>
                                 <input type="text" name="company" id="company" class="fullwidth"><br>
                                 <label for="message">Message <abbr title="required">*</abbr></label><br>
-                                <textarea width="100%" rows="10" id="message" class="fullwidth" required></textarea><br>
+                                <textarea width="100%" rows="10" name="message" id="message" class="fullwidth" required></textarea><br>
                                 <div id="submitdiv">
                                     <input type="submit" value="Send Message" id="submitform" class="button">
                                 </div>                            

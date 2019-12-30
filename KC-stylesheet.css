@@ -62,7 +62,7 @@ Header Section
     background-repeat: no-repeat;
 }
 #imgback {
-    background-image: url(https://media1.tenor.com/images/b81c8e7c84d6dcfa5d23fa51c75d7a57/tenor.gif?itemid=11500074);
+    background-image: url(Images/laughing.PNG);
 }
 #filter {
     height: 100vh;
@@ -177,7 +177,6 @@ header a { /* Defines the stylings for all links in the header bar */
 }
 #contact-div a:hover {
     background-color: #ef5728;
-    border-color: transparent;
     color: whitesmoke;
 }
 /* 
@@ -202,6 +201,52 @@ Page Header Statement
     line-height: 1.9em;
     color: whitesmoke;
 }
+/* Typing Introduction Section */
+
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+.container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container h1 {
+  font-size: 3.5rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+.container h1 span.typed-text {
+  font-weight: normal;
+  font-family: 'Courier New', Courier, monospace;
+  color: #EF5728;
+}
+.container h1 span.TypeCursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.TypeCursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+@media (max-width:750px) {
+  .container p {
+    font-size: 2rem;
+  }
+}
+
 /* ~~~~~~~~~~~
 Portrait Section
 ~~~~~~~~~~~ */
@@ -404,6 +449,103 @@ h5 {font-weight: bold; margin-bottom: 3px;}
 /* ############
    PORTFOLIO PAGE 
 ############ */
+#portfolioback {
+    background-image: url(https://media1.tenor.com/images/b81c8e7c84d6dcfa5d23fa51c75d7a57/tenor.gif?itemid=11500074);
+}
+/* These make the sections come into color when hovered over  */
+.gallerysec {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+.gallerysec:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+.gallerysec h1, .gallerysec h2 {margin: 0.2em auto;}
+.gallerysec h1 {font-size: 2.5vw;}
+.gallerysec h2 {font-size: 1.5vw;}
+.gallerysec p {font-size: 1.1vw;}
+.leftgal {background-color: white;}
+.rightgal {background-color: whitesmoke;}
+.gallery {
+    /* border: solid aquamarine; */
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.project {
+    /* border: 3px solid forestgreen; */
+    position: relative;
+    margin: 5vh auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+}
+/* Scale text inside overlay with screen aspect ratio, slides out as a cohesive unit */
+.overlay {
+    display: flex;
+    align-items: center; 
+}
+.gall-text {
+    border: solid navajowhite;
+    min-width: 20vw;
+    margin: 10%;
+    text-align: center;
+}
+/* Slide in from the left effect */
+.leftgal .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+.leftgal .project:hover .overlay {
+    width: 50%;
+}
+.leftgal .project:hover img{
+    -webkit-transform: translate(10%, 0);
+    -ms-transform: translate(10%, 0);
+    transform: translate(10%, 0);
+    transition: 0.5s ease-in-out;
+}
+/* Slide in from the right effect */
+.rightgal .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+.rightgal .project:hover .overlay {
+    width: 50%;
+    left: 50%;
+}
+.rightgal .project:hover img{
+    -webkit-transform: translate(-10%, 0);
+    -ms-transform: translate(-10%, 0);
+    transform: translate(-10%, 0);
+    transition: 0.5s ease;
+}
 
 /* ############
    ABOUT PAGE 
@@ -425,22 +567,37 @@ h5 {font-weight: bold; margin-bottom: 3px;}
     margin: auto;
 }
 #layingpic {width:70%;}
-.jagged img{
-    height: 40vh; /*May not need this at all*/
-    border: 1px solid #5e727c;
-}
-#lowpic {margin-top: 20vh;}
 
+/* Adventure Section */
+#adventure {background-color: whitesmoke;}
+#adventure h2 {font-size: 3.5vw;}
+.jagged {
+    margin-top: 5vh; 
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.jagged img{
+    height: auto;
+    width: 100%;
+    border: 1px solid #5e727c;
+    margin: 2vh auto; 
+    /* padding: 0;  */
+}
+.jagged a {margin: 1vw auto;}
 
 /* ############
    CONTACT PAGE 
 ############ */
+#contact {background-color: whitesmoke;}
 #formdiv {width: 85%; flex-flow: column wrap; background-color: white; border: 1px solid #5e727c; padding: 1em;}
 form {color: #5e727c;}
 form legend {font-size: 2em; margin-bottom: 1em; color: #071c30; text-align: center;}
 .fullwidth {width: 100%; margin-bottom: 2em;}
 .halfwidth {width: 100%;}
-.describe{color: orangered; font-size: 0.7em;}
+.describe{color: #5e727c; font-size: 0.7em;}
 .adjacent {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; margin-bottom: 2em;}
 .halfdiv {width: 45%;}
 #submitdiv {margin: 2em 0; width: 100%; display: flex; justify-content: center;}
@@ -450,7 +607,7 @@ form legend {font-size: 2em; margin-bottom: 1em; color: #071c30; text-align: cen
     color: #ef5728;
     border: 1px solid #EF5728;
 }
-
+abbr {color: #ef5728;}
 #submitform:hover {background-color: #ef5728; color:white; transition: ease-in-out 330ms;}
 abbr {text-decoration: none;}
 form label {font-family: "Libre Baskerville", serif, sans-serif;}
@@ -461,7 +618,10 @@ input:focus, textarea:focus{
     border: 1px solid #f3cb4f;
     box-shadow: 0;
 }
+input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white inset;} /*Fixes weird autocomplete bug*/
 
+/* ####################################################################################################################### */
+/* ####################################################################################################################### */
 /* ####################################################################################################################### */
 /* MOBILE MEDIA QUERY */
 /* Search what is an appropriate max width for this,
@@ -516,8 +676,9 @@ input:focus, textarea:focus{
     /* ############
       RESUME PAGE 
     ############ */
-    .res-section {flex-flow: row nowrap;}
-    .res-title {width: 40%;}
+    #resume .contents {margin: 3em auto;}
+    .res-section {flex-flow: row nowrap; margin-bottom: 1em;}
+    .res-title {width: 40%; margin-top: 0;}
     .res-items {width: 60%;}
     .threegallery{
         flex-flow: row nowrap;
@@ -539,6 +700,13 @@ input:focus, textarea:focus{
         width: 40%;
         padding: 1em;
     }
-
+    .jagged {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .jagged img {
+        width: 25vw;
+        height: 40vh;
+    }
+    .jagged a {margin: 2vw;}
 }
-        

@@ -1,3 +1,5 @@
 # Website TODOs
 
-So far, all of my to-do lists are still on my local machine in HTX. I will need to update this later. 
+TODOs
+- import a typewriter font for the JS animation on the home page; font not recognized on Chrome OS.
+- Add the remainder of the local todo here

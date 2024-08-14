@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kellan's First Website
+title: My First Website
 description: another without an image
 img: 
 importance: 3

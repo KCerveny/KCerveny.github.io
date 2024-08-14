@@ -2,7 +2,7 @@
 layout: page
 title: My First Website
 description: another without an image
-img: 
+img:
 importance: 3
 category: software
 ---

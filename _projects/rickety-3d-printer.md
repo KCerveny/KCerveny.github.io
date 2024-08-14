@@ -7,7 +7,7 @@ importance: 1
 category: hardware
 giscus_comments: true
 images:
-  compare: false
+  compare: true
   slider: true
 toc:
     sidebar: right
@@ -143,10 +143,12 @@ But then there are some unexpected parts that you might only recognize if you ar
 
 The firmware in this last point has a huge job. It turns out, almost all of our devices required different protocols to get them to work as intended, and many at different frequencies. In addition, there were lots of possible safety concerns for this project, from thermal runaway to power loss recovery. Not surprisingly, the firmware to manage all of these parts in near realtime is *very* complex, and I was not going to have time to write this by the end of the semester.
 
-After reading around I found [Marlin](https://marlinfw.org/), an open-source firmware suite that was designed for running on 3D printer control boards. Even better, it was compatible with my favorite microcontroller board at the time, the NodeMCU ESP32. 
+After reading around I found [Marlin](https://marlinfw.org/), an open-source firmware suite that was designed for running on 3D printer control boards. Even better, it was compatible with my favorite microcontroller board at the time, the NodeMCU ESP32. Lovely! Now to connect the parts.
 
 ### Schematic Design
-S
+For the embedded systems lab class, we were *supposed* to use Eagle EDA to design our boards. At the time, I did not have a laptop that I could easily carry with me to class. My daily driver while on the move was a 2017 Chromebook 3, which did not support this, or really any software. 
+
+Luckily, I had a very kind TA who let me use EasyEDA, which has a convenient web interface. Bonus points that it connects natively with JLC PCB, making fabrication a breeze. Thanks, Burak.
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
 
@@ -162,46 +164,81 @@ S
     A series of six schematics, together forming the full control board.
 </div>
 
+A seasoned electrical engineer may find it surprising how simple many of the sub-components ended up being. With the exception of a few niche parts and poorly-named headers, most of these diagrams will be instantly recognizable. They will be further surprised with what a mess I made of these neat diagrams once I placed and router them on the PCB. 
 
+Probably the only part worth discussing is found in schematic 1 on the first slide. To interface with all of these components required far more pins than the NodeMCU could support with a measly 38 pins. Indeed, Marlin firmware was originally written for the STM32 MCU family, which often have 64 pins. I used two I2C shift registers with to extend the number of available GPIO pins, at the expense of speed. Fortunately, the NodeMCU board boasts a clock speed of over [160 MHz](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf), where a typical STM32 board is run at only 16MHz. This leaves plenty of overhead despite losing some time to the shift registers.
 
 ### PCB Design
+<img-comparison-slider>
+  {% include figure.liquid path="assets/img/projects/rickety-3d-printer/control-board/ControlBoardBottom.png" title="Control board PCB bottom traces" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/projects/rickety-3d-printer/control-board/ControlBoardTop.png" title="Control board PCB top traces" class="img-fluid rounded z-depth-1" slot="second" %}
+</img-comparison-slider>
+<div class="caption">
+    Control board PCB, bottom traces left, top traces right.<br>
+    Slide the divider back and forth to compare.
+</div>
+
+This board was fun to route. I followed the pattern of having each side of the board correspond to an axis of travel for traces. The top was for left-right traversal, and the bottom of the board was top-bottom. If I were to do this again, I may have used more layers to act as ground planes for the high-power components, but we were limited to 2 layers at the time. 
+
+Most of the high-power traces were concentrated in the bottom left quadrant of the board. These were to offer three (3!) power inputs for the bed, the motors, and for the low-power components separately. There were also the header and power transistor used to manage the print bed heating via PWM. 
+
+Once this was ready, it was just a matter of clipping the correct parts into place and letting it run.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/CB_Render.jpg" title="Control Board PCB Render" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    A render of the control board PCB, before fabrication.
+</div>
+
 
 #### PCB Testing
 
 ## The GCode Sender
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### GCode Hardware
+The GCode sender was just the opposite of the control board: simple hardware and challenging firmware. The system was tiny: an MCU, a dial, a button, and some pins to connect to the control board. After checking the setup on a breadboard to make sure it worked, the system was easy to consolidate on a PCB.
 
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/Schematic_GCode.png" title="GCode sender schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/GSenderTop.png" title="GCode sender PCB top" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/GSenderBottom.png" title="GCode sender PCB bottom" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/SenderRender.jpg" title="GCode sender PCB render" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+</swiper-container>
+
+<div class="caption">
+    GCode Sender, from schematic to PCB.
+</div>
+
+The LCD display I selected also had a micro SD card slot, making it easy to store and transfer large files to the gcode sender. As will be seen in the firmware section, the SD card could also be used as storage for the files uploaded via the internet.
+
+### GCode Sender Firmware
+This is where I really dove deep with the firmware. Again the MCU for this device was the Espressif ESP32, renowned for its speed, price, and built-in networking capabilities. I used the Arduino IDE to compile and flash the firmware for this device, as it was a more mature plaform for ESP libraries at the time. All of the code written for the gcode sender was written in the Arduino language, which is simply a slightly modified C++. 
+
+The firmware for this component served multiple functions at once.
+1. **Send and recieve GCode, managing the print**. This is the device's primary job. Send instructions to the control board one at a time, and respond appropriately to any messages it returns.
+2. **Act as an interface for the user**. The user should be able to see the relative progress of the print and other important data, such as the current temperatures of the extruder and the print bed. This data is recieved from the control board, which is managing those components.
+3. **Host a web server?** This one was not at all necessary, but made the project a lot more fun. I thought it would be neat if a user could access the gcode sender via their browser and upload files for prints they wanted to complete. Of course, they could always write it to the micro SD card and insert it in the display. But this saved a little bit of walking, and allowed for my classmates to submit their fun prints, too.
+
+## Conclusion
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/laser-cut_frame1.HEIC" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/boy-with-printer.jpg" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+### Project Video
+As a part of the grade for submitting the final lab, each project needed to submit a video describing the components and its functionality. Check it out to see the printer in action! You can also catch a glimpse of the magic inside of Texas Inventionworks. 
+<div class="row mt-3">
+    <div class="col-lg mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/watch?v=GXcW5YrqNoA" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    If you have any trouble viewing the embedded video, you can find it <a href="https://www.youtube.com/watch?v=GXcW5YrqNoA">here on YouTube</a>.
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

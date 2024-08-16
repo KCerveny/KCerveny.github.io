@@ -4,7 +4,7 @@ title: The Rickety 3D Printer
 description: A 3D printer built from scratch in the labs of Texas Inventionworks.
 img: assets/img/projects/rickety-3d-printer/RicketyPrinter.jpg
 importance: 1
-category: hardware
+category: electronics
 giscus_comments: true
 images:
   compare: true

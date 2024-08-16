@@ -4,7 +4,7 @@ title: Movie Honeycomb
 description: Making movie night a no-brainer
 img: assets/img/projects/movie-honeycomb/honeycomb-thumb.jpeg
 importance: 1
-category: design
+category: laser-work
 images:
   slider: true
   compare: false

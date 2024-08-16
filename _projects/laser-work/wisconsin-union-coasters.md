@@ -5,7 +5,7 @@ description: A little fun celebrating my family's heritage
 img: assets/img/projects/wisco-coasters/coaster-thumb.jpg
 importance: 2
 permalink: /projects/wisconsin-union-coasters/
-category: fun
+category: laser-work
 giscus_comments: false
 toc:
   sidebar: right

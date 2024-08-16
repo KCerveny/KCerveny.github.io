@@ -3,8 +3,8 @@ layout: page
 title: The Pinecone Lamp
 description: Just as fun as it sounds!
 img: assets/img/projects/pinecone-lamp/dark-cone-thumb.jpg
-importance: 4
-category: design
+importance: 3
+category: laser-work
 giscus_comments: false
 toc:
   sidebar: right

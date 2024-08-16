@@ -4,7 +4,7 @@ title: UT Austin Coasters
 description: UT graduation presents for my friends
 img: assets/img/projects/ut-coasters/cutting.jpg
 importance: 5
-category: design
+category: laser-work
 giscus_comments: false
 toc:
   sidebar: right

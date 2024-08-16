@@ -4,6 +4,7 @@ title: Wisconsin Union Coasters
 description: A little fun celebrating my family's heritage
 img: assets/img/projects/wisco-coasters/coaster-thumb.jpg
 importance: 2
+permalink: /projects/wisconsin-union-coasters/
 category: fun
 giscus_comments: false
 toc:

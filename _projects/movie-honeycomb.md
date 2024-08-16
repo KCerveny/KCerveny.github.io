@@ -2,9 +2,15 @@
 layout: page
 title: Movie Honeycomb
 description: Making movie night a no-brainer
-img:
+img: assets/img/projects/movie-honeycomb/honeycomb-thumb.jpeg
 importance: 4
 category: design
+images:
+  slider: true
+  compare: false
+toc:
+  sidebar: right
+  scope: h4
 ---
 
 ## Background
@@ -35,13 +41,13 @@ One exhibit that really stuck with me was _[The Last Word](https://wonderspaces.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/comb-wall.jpg" title="Last Word from afar" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/comb-wall.jpeg" title="Last Word from afar" class="card-img img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/last-word.jpg" title="Visitors adding messages" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/slips.JPG" title="Close view of slips" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/slips.jpg" title="Close view of slips" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -72,21 +78,62 @@ I am not entirely sure how Illegal Art were able to drill so many deep hexagonal
 
 ### Design
 
+I did not have access to a giant router at the time. I did, however, have access to Texas Inventionworks' awesome laser cutting tables. Instead of making the honeycomb out of a single 3D piece, I was going to create it from a series of 2D slices, similar to how a 3D printer slices a model.
+
+Whenever I start brainstorming on a new project, I always like to start with pen and paper. No tools, no apps, no waiting for startup. Just doodle. I have yet to find a software solution for drawing, labeling, and doing math all in one place.
+
+Here I outlined exactly how large I wanted each of the holes to be, the dimensions of the cut, and how I was going to combine my slices. When working on a project that is hard to visualize, I always like to start from the outside in.
+
+Imagine it like you are a sculptor cutting from a stone. Get the outside of the piece first, then work your way in. When working on the smaller details you can relax and ignore the bigger picture, because you know you have already handled it. Once you are happy with the details, return to the big picture once more. Check from top to bottom again to make sure it looks good.
+
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true" height="600px">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note1.jpg" class="img-fluid rounded z-depth-1" zoomable="true" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note2.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note3.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note4.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note5.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
+
+Armed with a plan, I opened my favorite image editor [GIMP](https://www.gimp.org/). I converted that plan into some images, overlaying them to ensure they would play nicely together.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalTopLayer.png" title="Top layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalMiddleLayer.png" title="Middle layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalBackLayer.png" title="Bottom layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+    </div>
+</div>
+<div class="caption">
+    Left to right: top, middle, and bottom layer designs from GIMP.
+</div>
+
 ### Fabrication
 
 Most of the hard work was done in the design phase. Once I had my vector files, this was a series of quick laser cuts. Once each of the four layers were cut I fastened them with barrel screws, separated by quarter inch spacers. Before the top plate went on I inserted the box assembly for holding extra pens and paper slips.
 
+{% raw %}
+
+```html
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6701.MOV" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6704.MOV" class="img-fluid rounded z-depth-1" controls=true %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6701.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true
+    %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6704.MOV" class="img-fluid rounded z-depth-1" controls=true %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+  </div>
 </div>
-<div class="caption">
-    So satisfying! 
-</div>
+<div class="caption">So satisfying!</div>
+```
+
+{% endraw %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -100,18 +147,20 @@ Most of the hard work was done in the design phase. Once I had my vector files, 
     Finishing touches on the assembly, featuring the COVID mask.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Results
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+I suppose I could have stained this, but I did not want to tamper too much with the wood. After laser cutting, it has this warm campfire smell that I really like. This project has saved a lot of time scrolling through streaming sites, and has served as a fun reminder to have a movie night more often.
+
+This was also one of my first big laser cutting projects where I needed to do a lot of planning. If you enjoy
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/Honeycomb2.jpeg" title="Tightening the last screws" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/movie-honeycomb/Honeycomb.jpeg" title="Victory pose" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Finishing touches on the assembly, featuring the COVID mask.
 </div>

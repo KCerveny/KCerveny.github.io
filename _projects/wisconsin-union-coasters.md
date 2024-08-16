@@ -2,7 +2,7 @@
 layout: page
 title: Wisconsin Union Coasters
 description: A little fun celebrating my family's heritage
-img: assets/img/projects/wisco-coasters/coaster_with_chair.jpg
+img: assets/img/projects/wisco-coasters/coaster-thumb.jpg
 importance: 2
 category: fun
 giscus_comments: false

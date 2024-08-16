@@ -2,9 +2,10 @@
 layout: page
 title: The Rickety 3D Printer
 description: A 3D printer built from scratch in the labs of Texas Inventionworks.
-img: assets/img/projects/rickety-3d-printer/RicketyPrinter.jpg
+img: assets/img/projects/electronics/rickety-3d-printer/RicketyPrinter.jpg
 importance: 1
 category: electronics
+permalink: /projects/rickety-3d-printer/
 giscus_comments: true
 images:
   compare: true
@@ -13,8 +14,6 @@ toc:
   sidebar: right
   scope: h4
 ---
-
-{% assign image_path = "assets/img/projects/rickety-3d-printer" %}
 
 The _Rickety 3D Printer_ was my final lab submission for EE 445L Embedded Systems Lab, one of my favorite classes at UT. It is result of three months of very dedicated work, lots of support from others, and more than a few mishaps. Ultimately, this project submission came in 2nd for the UT ECE Embedded Systems competition, earning just over half of all possible points and getting me out of taking my final.
 
@@ -32,10 +31,10 @@ Wonderful! A win-win for everyone. I could get some parts and a desk in the elec
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/loose_parts.JPG" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/loose_parts.JPG" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -72,13 +71,13 @@ So I went to a favorite site of TIW, [boxes.py](https://boxes.boringplace.org/),
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/boxes_py.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/boxes_py.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/laser-cut_frame1.jpg" title="case building 1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/laser-cut_frame1.jpg" title="case building 1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/laser-cut_frame3.jpg" title="Drilling mounting holes" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/laser-cut_frame3.jpg" title="Drilling mounting holes" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -90,10 +89,10 @@ After cutting the outer case from 1/4 inch plywood, I cut a large window in four
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gluing_case.jpg" title="Assembling the case after checking the rails." class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/gluing_case.jpg" title="Assembling the case after checking the rails." class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/case_no_internals.jpg" title="Printer case without internals" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/case_no_internals.jpg" title="Printer case without internals" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -106,10 +105,10 @@ Last but not least, we needed some internals. All of the parts _fit_ in the case
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/projects/rickety-3d-printer/check_before_assembly.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/projects/electronics/rickety-3d-printer/check_before_assembly.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/projects/rickety-3d-printer/zaxis-working.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/projects/electronics/rickety-3d-printer/zaxis-working.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
@@ -162,12 +161,12 @@ Luckily, I had a very kind TA who let me use EasyEDA, which has a convenient web
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
 
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_1.png" title="MCU schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_2 copy.png" title="Motor drivers schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_3 copy.png" title="Extruder drivers schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_4 copy.png" title="Thermistor and fans schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_5 copy.png" title="High power devices schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/Sheet_6 copy.png" title="Signal input schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_1.png" title="MCU schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_2 copy.png" title="Motor drivers schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_3 copy.png" title="Extruder drivers schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_4 copy.png" title="Thermistor and fans schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_5 copy.png" title="High power devices schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+<swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/Sheet_6 copy.png" title="Signal input schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
 
 </swiper-container>
 <div class="caption">
@@ -181,8 +180,8 @@ Probably the only part worth discussing is found in schematic 1 on the first sli
 ### PCB Design
 
 <img-comparison-slider>
-  {% include figure.liquid path="assets/img/projects/rickety-3d-printer/control-board/ControlBoardBottom.png" title="Control board PCB bottom traces" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid path="assets/img/projects/rickety-3d-printer/control-board/ControlBoardTop.png" title="Control board PCB top traces" class="img-fluid rounded z-depth-1" slot="second" %}
+  {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/control-board/ControlBoardBottom.png" title="Control board PCB bottom traces" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/control-board/ControlBoardTop.png" title="Control board PCB top traces" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
 <div class="caption">
     Control board PCB, bottom traces left, top traces right.<br>
@@ -197,7 +196,7 @@ Once this was ready, it was just a matter of clipping the correct parts into pla
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/control-board/CB_Render.jpg" title="Control Board PCB Render" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/control-board/CB_Render.jpg" title="Control Board PCB Render" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -213,10 +212,10 @@ Once this was ready, it was just a matter of clipping the correct parts into pla
 The GCode sender was just the opposite of the control board: simple hardware and challenging firmware. The system was tiny: an MCU, a dial, a button, and some pins to connect to the control board. After checking the setup on a breadboard to make sure it worked, the system was easy to consolidate on a PCB.
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/Schematic_GCode.png" title="GCode sender schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/GSenderTop.png" title="GCode sender PCB top" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/GSenderBottom.png" title="GCode sender PCB bottom" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/rickety-3d-printer/gcode-sender/SenderRender.jpg" title="GCode sender PCB render" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/gcode-sender/Schematic_GCode.png" title="GCode sender schematic" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/gcode-sender/GSenderTop.png" title="GCode sender PCB top" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/gcode-sender/GSenderBottom.png" title="GCode sender PCB bottom" class="img-fluid rounded z-depth-1" zoomable=false %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/electronics/rickety-3d-printer/gcode-sender/SenderRender.jpg" title="GCode sender PCB render" class="img-fluid rounded z-depth-1" zoomable=true %}</swiper-slide>
 </swiper-container>
 
 <div class="caption">
@@ -239,10 +238,10 @@ The firmware for this component served multiple functions at once.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/RicketyPrinter.jpg" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/RicketyPrinter.jpg" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

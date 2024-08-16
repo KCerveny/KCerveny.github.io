@@ -2,7 +2,7 @@
 layout: page
 title: Minimalist Keyrack
 description: Writeup coming soon!
-img: assets/img/projects/minimalist-keyrack/keyrack-thumb.jpg
+img: assets/img/projects/laser-work/minimalist-keyrack/keyrack-thumb.jpg
 importance: 3
 category: laser-work
 related_publications: true

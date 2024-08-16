@@ -2,7 +2,7 @@
 layout: page
 title: Wild West Secret Hitler Boardgame
 description: Writeup coming soon!
-img: assets/img/projects/wild-west-boardgame/game-thumb.jpg
+img: assets/img/projects/laser-work/wild-west-boardgame/game-thumb.jpg
 importance: 2
 category: laser-work
 toc:

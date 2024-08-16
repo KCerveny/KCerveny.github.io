@@ -2,7 +2,7 @@
 layout: page
 title: Follow-me Lights
 description: Writeup coming soon!
-img: assets/img/projects/follow-me-lights/lights-thumb.jpg
+img: assets/img/projects/electronics/follow-me-lights/lights-thumb.jpg
 importance: 2
 category: electronics
 related_publications: true

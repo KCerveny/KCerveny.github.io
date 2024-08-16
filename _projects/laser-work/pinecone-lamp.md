@@ -2,7 +2,7 @@
 layout: page
 title: The Pinecone Lamp
 description: Just as fun as it sounds!
-img: assets/img/projects/pinecone-lamp/dark-cone-thumb.jpg
+img: assets/img/projects/laser-work/pinecone-lamp/dark-cone-thumb.jpg
 importance: 3
 category: laser-work
 giscus_comments: false
@@ -17,7 +17,7 @@ During a study abroad trip to Denmark in college, my girlfriend Barna and I went
 
 <div class="row">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/pine-inspo.jpg" title="The lights in the cafe" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/pine-inspo.jpg" title="The lights in the cafe" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 
@@ -29,13 +29,13 @@ As one might expect, the cafe in Odense was not the only place in the world to h
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/russian-version.jpg" title="Parts from a seller online" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/russian-version.jpg" title="Parts from a seller online" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/good-view.PNG" title="A great view of individual components" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/good-view.PNG" title="A great view of individual components" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/amz-dims.jpg" title="A standing lamp with dimensions" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/amz-dims.jpg" title="A standing lamp with dimensions" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -58,10 +58,10 @@ Because a professional packed up the vector files, this was about as simple of a
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/dark-cone.jpg" title="Pinecone lamp in a dark room" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/dark-cone.jpg" title="Pinecone lamp in a dark room" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/pinecone-lamp/in-room.jpg" title="The pinecone lamp in a room" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/in-room.jpg" title="The pinecone lamp in a room" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 

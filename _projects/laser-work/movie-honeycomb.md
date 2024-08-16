@@ -2,7 +2,7 @@
 layout: page
 title: Movie Honeycomb
 description: Making movie night a no-brainer
-img: assets/img/projects/movie-honeycomb/honeycomb-thumb.jpeg
+img: assets/img/projects/laser-work/movie-honeycomb/honeycomb-thumb.jpeg
 importance: 1
 category: laser-work
 images:
@@ -41,13 +41,13 @@ One exhibit that really stuck with me was _[The Last Word](https://wonderspaces.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/comb-wall.jpeg" title="Last Word from afar" class="card-img img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/comb-wall.jpeg" title="Last Word from afar" class="card-img img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/last-word.jpg" title="Visitors adding messages" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/last-word.jpg" title="Visitors adding messages" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/slips.jpg" title="Close view of slips" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/slips.jpg" title="Close view of slips" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -87,24 +87,24 @@ Here I outlined exactly how large I wanted each of the holes to be, the dimensio
 Imagine it like you are a sculptor cutting from a stone. Get the outside of the piece first, then work your way in. When working on the smaller details you can relax and ignore the bigger picture, because you know you have already handled it. Once you are happy with the details, return to the big picture once more. Check from top to bottom again to make sure it looks good.
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true" height="600px">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note1.jpg" class="img-fluid rounded z-depth-1" zoomable="true" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note2.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note3.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note4.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/note5.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/note1.jpg" class="img-fluid rounded z-depth-1" zoomable="false" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/note2.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/note3.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/note4.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/note5.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
 Armed with a plan, I opened my favorite image editor [GIMP](https://www.gimp.org/). I converted that plan into some images, overlaying them to ensure they would play nicely together.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalTopLayer.png" title="Top layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/HorizontalTopLayer.png" title="Top layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalMiddleLayer.png" title="Middle layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/HorizontalMiddleLayer.png" title="Middle layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/HorizontalBackLayer.png" title="Bottom layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/HorizontalBackLayer.png" title="Bottom layer design" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -120,11 +120,11 @@ Most of the hard work was done in the design phase. Once I had my vector files, 
 ```html
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6701.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true
-    %}
+    {% include video.liquid path="assets/video/projects/laser-work/movie-honeycomb/IMG_6701.mp4" class="img-fluid rounded z-depth-1" controls=true
+    autoplay=true %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/projects/movie-honeycomb/IMG_6704.MOV" class="img-fluid rounded z-depth-1" controls=true %}
+    {% include video.liquid path="assets/video/projects/laser-work/movie-honeycomb/IMG_6704.MOV" class="img-fluid rounded z-depth-1" controls=true %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
@@ -137,10 +137,10 @@ Most of the hard work was done in the design phase. Once I had my vector files, 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/Honeycomb2.jpeg" title="Tightening the last screws" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/Honeycomb2.jpeg" title="Tightening the last screws" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/Honeycomb.jpeg" title="Victory pose" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/Honeycomb.jpeg" title="Victory pose" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -155,10 +155,10 @@ This was also one of my first big laser cutting projects where I needed to do a 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/movie-honeycomb/Honeycomb2.jpeg" title="Tightening the last screws" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/movie-honeycomb/Honeycomb2.jpeg" title="Tightening the last screws" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/movie-honeycomb/Honeycomb.jpeg" title="Victory pose" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid path="assets/img/projects/laser-work/movie-honeycomb/Honeycomb.jpeg" title="Victory pose" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">

@@ -2,7 +2,7 @@
 layout: page
 title: UT Austin Coasters
 description: UT graduation presents for my friends
-img: assets/img/projects/ut-coasters/cutting.jpg
+img: assets/img/projects/laser-work/ut-coasters/cutting.jpg
 importance: 5
 category: laser-work
 giscus_comments: false
@@ -23,13 +23,13 @@ I took a lot of lessons from the union coasters set I had previously done, and f
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/ut-seal.png" title="Old UT Austin Seal" alt="Old UT Austin Seal" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/ut-seal.png" title="Old UT Austin Seal" alt="Old UT Austin Seal" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/Longhorn.png" title="Famous UT Longhorn Icon" alt="Famous UT Longhorn Icon" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/Longhorn.png" title="Famous UT Longhorn Icon" alt="Famous UT Longhorn Icon" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/new-seal.png" title="New UT Austin Seal" alt="New UT Austin Seal" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/new-seal.png" title="New UT Austin Seal" alt="New UT Austin Seal" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -38,10 +38,10 @@ I took a lot of lessons from the union coasters set I had previously done, and f
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/Longhorns.png" title="Coaster design using UT horns" alt="Coaster design using UT horns" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/Longhorns.png" title="Coaster design using UT horns" alt="Coaster design using UT horns" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/Modern.png" title="Coaster design using modern seal" alt="Coaster design using modern seal" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/Modern.png" title="Coaster design using modern seal" alt="Coaster design using modern seal" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -52,7 +52,7 @@ The construction was also the [same process](/projects/wisconsin-union-coasters/
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/projects/ut-coasters/rastering.mov" class="img-fluid rounded z-depth-1" controls=true autoplay=true
+    {% include video.liquid path="assets/video/projects/laser-work/ut-coasters/rastering.mov" class="img-fluid rounded z-depth-1" controls=true autoplay=true
     %}
   </div>
 </div>
@@ -64,10 +64,10 @@ After the cuts and rasters, it was a straight assembly line of sanding, staining
 
 <div class="row">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/both.jpg" title="Both UT coasters final design" alt="Both UT coasters final design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/both.jpg" title="Both UT coasters final design" alt="Both UT coasters final design" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ut-coasters/on-desk.jpg" title="UT coaster on desk" alt="UT coaster on desk" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/ut-coasters/on-desk.jpg" title="UT coaster on desk" alt="UT coaster on desk" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">

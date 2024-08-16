@@ -2,7 +2,7 @@
 layout: page
 title: Wisconsin Union Coasters
 description: A little fun celebrating my family's heritage
-img: assets/img/projects/wisco-coasters/coaster-thumb.jpg
+img: assets/img/projects/laser-work/wisco-coasters/coaster-thumb.jpg
 importance: 2
 permalink: /projects/wisconsin-union-coasters/
 category: laser-work
@@ -20,10 +20,10 @@ At the University of Wisconsin, there is a spot on lake Mendota called "the unio
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/union.jpg" title="The wisconsin union" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/union.jpg" title="The wisconsin union" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/union-chairs.jpg" title="UW Union with chairs" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/union-chairs.jpg" title="UW Union with chairs" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -62,13 +62,13 @@ Really not a complicated process. Mostly relaxing, if you like woodworking.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/stained-layers.jpg" title="Stained coaster pieces drying" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/stained-layers.jpg" title="Stained coaster pieces drying" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/stained-layers2.jpg" title="Coaster pieces mid staining" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/stained-layers2.jpg" title="Coaster pieces mid staining" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/felt-cutting.jpg" title="Cut felt center pieces waiting to be inserted" class="img-fluid rounded z-depth-1" zoomable="false" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/felt-cutting.jpg" title="Cut felt center pieces waiting to be inserted" class="img-fluid rounded z-depth-1" zoomable="false" %}
     </div>
 </div>
 <div class="caption">
@@ -81,10 +81,10 @@ Really not a complicated process. Mostly relaxing, if you like woodworking.
 
 <div class="row">
     <div class="col-sm-5 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/coaster_with_chair.jpg" title="The wisconsin union" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/coaster_with_chair.jpg" title="The wisconsin union" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm-7 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/wisco-coasters/victory.jpg" title="UW Union with chairs" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/wisco-coasters/victory.jpg" title="UW Union with chairs" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">

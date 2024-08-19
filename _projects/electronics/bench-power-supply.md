@@ -3,7 +3,7 @@ layout: page
 title: Bench Power Supply
 description: Your handy companion for electronics projects
 img: assets/img/projects/electronics/bench-power-supply/portrait.jpg
-importance: 3
+importance: 4
 category: electronics
 giscus_comments: false
 images:

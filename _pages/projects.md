@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of things I am creating.
 nav: true
 nav_order: 3
-display_categories: [hardware, software, design, work, fun]
+display_categories: [electronics, software, design, laser-work, fun]
 horizontal: false
 ---
 

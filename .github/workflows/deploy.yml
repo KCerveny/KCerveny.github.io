@@ -79,9 +79,15 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Setup Python Dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+          cache: "pip" # caching pip dependencies
+      - name: Install jupyter
+        run: pip3 install --upgrade jupyter
       - name: Install and Build 🔧
         run: |
-          pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Keyboard Wrist Rest
-description: Writeup coming soon!
-img: assets/img/projects/laser-work/minimalist-keyrack/keyrack-thumb.jpg
+description: My keyboard's companion
+img: assets/img/projects/laser-work/keyboard-wrist-rest/kb-thumb.jpg
 permalink: /projects/keyboard-wrist-rest/
 importance: 5
 category: laser-work
@@ -40,23 +40,29 @@ I cut the project from 2 pieces of quarter-inch plywood, stacked and glued toget
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/WristRest_ext.png" title="Keyboard wrist rest final design" alt="Keyboard wrist rest final design" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/wr-top.jpg" title="Keyboard wrist rest top view" alt="Keyboard wrist rest top view" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/WristRest2.0.png" title="Candidate alternative 2.0" alt="Candidate alternative 2.0" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/wr-bottom.jpg" title="Keyboard wrist rest bottom view" alt="Keyboard wrist rest bottom view" class="img-fluid rounded z-depth-1" zoomable="true" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/kb-full.jpg" title="Wrist rest with keyboard" alt="Keyboard wrist rest with keyboard" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
-    Top and bottom of the keyboard wrist rest.
+    Wrist rest top, bottom, and with keyboard.
 </div>
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/WristRest2.1.png" title="Candidate alternative 2.1" alt="Candidate alternative 2.1" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/kb-left.jpg" title="Left view of wrist rest with keyboard" alt="Left view of wrist rest with keyboard" class="img-fluid rounded z-depth-1" zoomable="true" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/keyboard-wrist-rest/kb-side.jpg" title="Side view of wrist rest with keyboard" alt="Side view of wrist rest with keyboard" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
-    Wrist rest paired with keyboard.
+    Wrist rest with keyboard alternate angles.
 </div>
 
 ## Learnings and Reflections

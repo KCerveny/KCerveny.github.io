@@ -57,7 +57,9 @@ To make the **software defined radio** (SDR) work, I installed and configured Ai
     Left to right: Listening to radio with AirSpy. First scan of the garage opener's signal.
 </div>
 
-Now to dig a little deeper. By tuning the contrast, speed, and offset of the reciever, I was able to get a better picture of the actual signal. With the enhanced view, you can see that there appears to be a pattern in the signal being sent by the garage button. My hunch was that it is likely the garage open signal being sent multiple times in a row. If this is true, that would mean that the key fob is sending the **same signal** on each press of the button. If I could capture the signal from a programmed button to my garage like this, interpret it, and send it myself, I could then get back in my apartment's garage.
+Now to dig a little deeper. By tuning the contrast, speed, and offset of the reciever, I was able to get a better picture of the actual signal. With the enhanced view, you can see that there appears to be a pattern in the signal being sent by the garage button.
+
+My hunch was that it is likely the garage open signal being sent multiple times in a row. If this is true, that would mean that **the key fob is sending the same signal on each press** of the button. If I could capture the signal from a programmed button to my garage like this, interpret it, and send it myself, I could then get back in my apartment's garage.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">

@@ -2,7 +2,7 @@
 layout: page
 title: Floating Arcade Cabinet
 description: Writeup coming soon!
-img: assets/img/projects/floating-arcade/arcade-thumb.JPG
+img: assets/img/projects/floating-arcade/arcade-thumb.jpg
 importance: 3
 category: fun
 images:

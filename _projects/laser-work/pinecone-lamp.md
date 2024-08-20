@@ -32,7 +32,7 @@ As one might expect, the cafe in Odense was not the only place in the world to h
         {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/russian-version.jpg" title="Parts from a seller online" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/good-view.PNG" title="A great view of individual components" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/good-view.png" title="A great view of individual components" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/laser-work/pinecone-lamp/amz-dims.jpg" title="A standing lamp with dimensions" class="img-fluid rounded z-depth-1" zoomable="true" %}

@@ -71,7 +71,7 @@ Fortunately, these boards actually worked exactly as intended. Not only did thes
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v1/v1-assembled.PNG" title="Comparisson of perfboard to V1" alt="Comparisson of perfboard to V1" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v1/v1-assembled.png" title="Comparisson of perfboard to V1" alt="Comparisson of perfboard to V1" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -86,10 +86,10 @@ So we had a huge improvement in the size and assembly of the LED driver, but it 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-layout.JPG" title="PCB Layout of light controller v2" alt="PCB Layout of light controller v2" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-layout.jpg" title="PCB Layout of light controller v2" alt="PCB Layout of light controller v2" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-render.JPG" title="PCB render of light controller v2" alt="PCB render of light controller v2" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-render.jpg" title="PCB render of light controller v2" alt="PCB render of light controller v2" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">
@@ -98,7 +98,7 @@ So we had a huge improvement in the size and assembly of the LED driver, but it 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-board.JPG" title="Fabricated light controller v2 PCB" alt="Fabricated light controller v2 PCB" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-board.jpg" title="Fabricated light controller v2 PCB" alt="Fabricated light controller v2 PCB" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v2/v2-panel-size.jpg" title="v2 PCB panel" alt="v2 PCB panel" class="img-fluid rounded z-depth-1" zoomable="true" %}

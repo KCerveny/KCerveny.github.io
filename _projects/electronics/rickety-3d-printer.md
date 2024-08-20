@@ -31,7 +31,7 @@ Wonderful! A win-win for everyone. I could get some parts and a desk in the elec
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/loose_parts.JPG" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/loose_parts.jpg" title="loose parts" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/electronics/rickety-3d-printer/power_plan.jpg" title="napkin math" class="img-fluid rounded z-depth-1" %}

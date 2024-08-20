@@ -37,7 +37,7 @@ We needed our own catalog. Not like the Netflix catalog. One where **every** mov
 
 That same year Barna and I had a free weekend and went to [Wonderspaces](https://austin.wonderspaces.com/), an interactive art center in Austin. There are normally a dozen or so installations to enjoy, and it takes about two hours to get through.
 
-One exhibit that really stuck with me was _[The Last Word](https://wonderspaces.net/the-last-word)_ by art collective Illegal Art. It was a large wooden board on a wall, with holes cut in a dense honeycomb pattern. In each cell was a rolled slip of paper, dyed red on one end. If the red end of the roll was visible, that slip had been written on. If not, it was free to use.
+One exhibit that really stuck with me was [The Last Word](https://www.wonderspaces.com/artists/illegal-art) by art collective Illegal Art. It was a large wooden board on a wall, with holes cut in a dense honeycomb pattern. In each cell was a rolled slip of paper, dyed red on one end. If the red end of the roll was visible, that slip had been written on. If not, it was free to use.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

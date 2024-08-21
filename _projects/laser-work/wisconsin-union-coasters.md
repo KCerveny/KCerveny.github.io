@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wisconsin Union Coasters
-description: A little fun celebrating my family's heritage
+description: <!> A little fun celebrating my family's heritage
 img: assets/img/projects/laser-work/wisco-coasters/coaster-thumb.jpg
 importance: 2
 permalink: /projects/wisconsin-union-coasters/

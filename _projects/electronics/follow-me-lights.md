@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Follow-me Lights
-description: Writeup coming soon!
+description: <!> Writeup coming soon!
 img: assets/img/projects/electronics/follow-me-lights/lights-thumb.jpg
 permalink: /projects/follow-me-lights/
 importance: 3

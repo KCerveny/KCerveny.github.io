@@ -67,4 +67,4 @@ I cut the project from 2 pieces of quarter-inch plywood, stacked and glued toget
 
 ## Learnings and Reflections
 
-This project is durable, and has served me well for many years. I like this project a lot, but all designs can be improved. If I were to re-cut this wrist rest today, I would round out the bottom corners, where my palm naturally rests against the wood. I would have also chosen a slightly smoother pattern for the raster. Because of the depth of the raster cuts, it was not possible to apply a finish to the wood, leaving it with its raw color.
+This project is durable, and has served me well for many years. I like this wrist rest a lot, but all designs can be improved. If I were to re-cut this design today, I would round out the bottom corners, where my palm naturally rests against the wood. I would have also chosen a slightly smoother pattern for the raster. Because of the depth of the raster cuts, it was not possible to apply a finish to the wood, leaving it with its raw color.

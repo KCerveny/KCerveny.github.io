@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Movie Honeycomb
-description: Making movie night a no-brainer
+description: <!> Making movie night a no-brainer
 img: assets/img/projects/laser-work/movie-honeycomb/honeycomb-thumb.jpeg
 importance: 1
 category: laser-work

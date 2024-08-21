@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Drone Power Distribution Board
-description: High-powered, high flying hijinks
-img: assets/img/projects/electronics/follow-me-lights/lights-thumb.jpg
+description: <!> High-powered, high flying hijinks
+img: assets/img/projects/electronics/feather-pdb/pdb-render.jpg
 # permalink: /projects/follow-me-lights/
 importance: 4
 category: electronics

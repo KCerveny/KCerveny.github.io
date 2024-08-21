@@ -3,6 +3,7 @@ autoplay
 amm
 amz
 config
+endfor
 endraw
 extiw
 GSender
@@ -15,7 +16,10 @@ mov
 pdf
 RCWL
 spraypaint
+svg
 toc
+uint
+wav
 webfonts
 webp
 woff

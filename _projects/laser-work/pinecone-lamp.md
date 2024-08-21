@@ -42,9 +42,7 @@ As one might expect, the cafe in Odense was not the only place in the world to h
     Two images of kits from sellers online. A standing lamp version with dimensions for the cone.
 </div>
 
-https://jessicaheide.com/blog/parts-of-a-pinecone
-
-Wait a minute. That looks a lot like cut plywood with some fasteners. If I could make a template for each <d-footnote>prickle</d-footnote> of the pinecone, I could very easily laser cut these in the lab. I even found an image with each of the 7 variants laid out on a table, labeled with their corresponding orders.
+Wait a minute. That looks a lot like cut plywood with some fasteners. If I could make a template for each [prickle](https://jessicaheide.com/blog/parts-of-a-pinecone) of the pinecone, I could very easily laser cut these in the lab. I even found an image with each of the 7 variants laid out on a table, labeled with their corresponding orders.
 
 So I got to work. I cracked open GIMP, my image editing software, and started trying to make the designs. My plan was to cut each of the 7 templates out from the image and then convert those to svg files, which I could cut with a laser. This was just not in the cards for me. After a couple of hours and very little progress, I went looking for some more help.
 

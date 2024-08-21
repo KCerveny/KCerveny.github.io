@@ -90,6 +90,7 @@ jobs:
         run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build --profile
+
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Rickety 3D Printer
-description: A 3D printer built from scratch in the labs of Texas Inventionworks.
+description: <!> A 3D printer built from scratch in the labs of Texas Inventionworks.
 img: assets/img/projects/electronics/rickety-3d-printer/RicketyPrinter.jpg
 importance: 1
 category: electronics
@@ -19,13 +19,13 @@ The _Rickety 3D Printer_ was my final lab submission for EE 445L Embedded System
 
 ## Background
 
-During my last year of my UT undergrad I took EE 445L Embedded Systems Lab, considered by many students to be one of the most challenging undergraduate ECE classes. Throughout the semester we were to complete 11 labs, the final lab being of our own design. Throughout the semester we would begin to design and build our final labs. Each team of students would submit their final project to the competition, and the top three projects would be excempt from taking the final exam. For a class as tough as this, the award was a powerful incentive.
+During my last year of my UT undergrad I took EE 445L Embedded Systems Lab, considered by many students to be one of the most challenging undergraduate ECE classes. Throughout the semester we were to complete 11 labs, the final lab being of our own design. Throughout the semester we would begin to design and build our final labs. Each team of students would submit their final project to the competition, and the top three projects would be exempt from taking the final exam. For a class as tough as this, the award was a powerful incentive.
 
 ### Texas Inventionworks
 
 I was fortunate to have a few advantages in this project. First, I was a part-time employee at Texas Inventionworks (TIW), the makerspace for engineering students at UT. This place is _magic_. Chock-full of interesting machines, interesting ideas, and interesting people. And I happened to be familiar with many of these interesting machines, ideas, and people through my time working at TIW.
 
-When the opportunity arose to come up with our own project, I went straight to my colleages and friends at TIW asking for advice. One of the leaders, Steve, offered a great idea. There were some linear rails, belts, and stepper motors left over from a previous project. He offered to let me use those to build a 3D printer if I would mention TIW and generate some excitement for the space.
+When the opportunity arose to come up with our own project, I went straight to my colleagues and friends at TIW asking for advice. One of the leaders, Steve, offered a great idea. There were some linear rails, belts, and stepper motors left over from a previous project. He offered to let me use those to build a 3D printer if I would mention TIW and generate some excitement for the space.
 
 Wonderful! A win-win for everyone. I could get some parts and a desk in the electronics lab, and all I had to do was hype my favorite place at UT. Easy. Now the hard part.
 
@@ -43,11 +43,11 @@ Wonderful! A win-win for everyone. I could get some parts and a desk in the elec
 
 ## Approach
 
-Turns out, this project was actually three projects in a trenchcoat, each depending on the former. In the stack:
+Turns out, this project was actually three projects in a trench coat, each depending on the former. In the stack:
 
 1. **The case**: The case is the part most people imagine when they hear "3D Printer". It is all of the hardware that makes the machine: linear rails, belts, motors, lights, the printing bed, end stops, etc. I needed to turn our loose box of parts into a case.
 2. **The control board**: Once the case is complete, we have a fully built box that does not do anything. The control board acts as the orchestrator, converting commands into coordinated movements and actions. Everything from the movement of motors, extrusion of filament, to the heating of the bed and filament heating elements are performed by the control board.
-3. **The GCode Sender**: With both a case and a control board, the machine can now take commands and convert them into intricate actions. These commands come from our GCode sender. It is responsible for ensuring commands are recieved and executed in a timely manner, and handles unexpected events.
+3. **The GCode Sender**: With both a case and a control board, the machine can now take commands and convert them into intricate actions. These commands come from our GCode sender. It is responsible for ensuring commands are received and executed in a timely manner, and handles unexpected events.
 
 If you have never worked with 3D printers before, this may seem confusing. I always love a good analogy, so I will try to devise one for you here.
 
@@ -55,7 +55,7 @@ Imagine this whole system as a car. The **case** is the visible parts: the wheel
 
 The **control board** is like our steering wheel, pedals, indicator blinker buttons, and windshield wiper stick. Of course, the gas pedal does not make the car move. It just converts a command (depression of the gas pedal) into actions (more engine force). The car is now drivable!
 
-Finally, our **GCode sender** is like the driver. Its job is to interperet the state of the environment and convert its plans into commands. If it wants to reach a higher speed, it will send a command for more gas.
+Finally, our **GCode sender** is like the driver. Its job is to interpret the state of the environment and convert its plans into commands. If it wants to reach a higher speed, it will send a command for more gas.
 
 ## The Case
 
@@ -67,7 +67,7 @@ Now, although this step involved the least electrical engineering, I think it is
 
 So what's the plan? I measured out the linear rails and base to understand the inside dimensions that I would need for the case. A 3D printer is, in most cases, just a box with mounts for motors and the bed. TIW had multiple Spectrum laser beds, good for quickly cutting thin sheets of wood and acrylic with high precision. I could use these to design and fabricate the exterior of the case quickly.
 
-So I went to a favorite site of TIW, [boxes.py](https://boxes.boringplace.org/), to build a box to the correct dimensions. If you ever find yourself needing to laser cut a 3D project, you ought to check it out. It will save you an enourmous amount of stress designing your projects, and will even plan your finger joints to boot.
+So I went to a favorite site of TIW, [boxes.py](https://boxes.boringplace.org/), to build a box to the correct dimensions. If you ever find yourself needing to laser cut a 3D project, you ought to check it out. It will save you an enormous amount of stress designing your projects, and will even plan your finger joints to boot.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -85,7 +85,7 @@ So I went to a favorite site of TIW, [boxes.py](https://boxes.boringplace.org/),
     Center and Right: Drilling mounting holes after laser cutting the parts.
 </div>
 
-After cutting the outer case from 1/4 inch plywood, I cut a large window in four of the six faces to access the inside. You can see that our vertical rails fit snugly inside. What a relief! The finger joints holding the faces together were _very_ snug, and held together easily. With a little wood glue and some clamps, the case ended up being suprisingly sturdy.
+After cutting the outer case from 1/4 inch plywood, I cut a large window in four of the six faces to access the inside. You can see that our vertical rails fit snugly inside. What a relief! The finger joints holding the faces together were _very_ snug, and held together easily. With a little wood glue and some clamps, the case ended up being surprisingly sturdy.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -134,7 +134,7 @@ That turns out to be a lot of parts, and a precarious mix of high power lines an
 
 ### System Design
 
-Before designing a control board, I needed to decide which components the board needed to control. The first few decisions are relatively easy. We will need it to move in three axes. The extruder will need to be hot so that it can melt the filamtent before depositing it on the print bed. The print bed ought to be hot, but not too hot, to prevent the print from warping as it cooled.
+Before designing a control board, I needed to decide which components the board needed to control. The first few decisions are relatively easy. We will need it to move in three axes. The extruder will need to be hot so that it can melt the filament before depositing it on the print bed. The print bed ought to be hot, but not too hot, to prevent the print from warping as it cooled.
 
 But then there are some unexpected parts that you might only recognize if you are familiar with 3D printers. Or, more precisely, if you are familiar with the many, many ways in which they can go wrong. With enough failed prints, you would ask:
 
@@ -226,12 +226,12 @@ The LCD display I selected also had a micro SD card slot, making it easy to stor
 
 ### GCode Sender Firmware
 
-This is where I really dove deep with the firmware. Again the MCU for this device was the Espressif ESP32, renowned for its speed, price, and built-in networking capabilities. I used the Arduino IDE to compile and flash the firmware for this device, as it was a more mature plaform for ESP libraries at the time. All of the code written for the gcode sender was written in the Arduino language, which is simply a slightly modified C++.
+This is where I really dove deep with the firmware. Again the MCU for this device was the Espressif ESP32, renowned for its speed, price, and built-in networking capabilities. I used the Arduino IDE to compile and flash the firmware for this device, as it was a more mature platform for ESP libraries at the time. All of the code written for the gcode sender was written in the Arduino language, which is simply a slightly modified C++.
 
 The firmware for this component served multiple functions at once.
 
-1. **Send and recieve GCode, managing the print**. This is the device's primary job. Send instructions to the control board one at a time, and respond appropriately to any messages it returns.
-2. **Act as an interface for the user**. The user should be able to see the relative progress of the print and other important data, such as the current temperatures of the extruder and the print bed. This data is recieved from the control board, which is managing those components.
+1. **Send and receive GCode, managing the print**. This is the device's primary job. Send instructions to the control board one at a time, and respond appropriately to any messages it returns.
+2. **Act as an interface for the user**. The user should be able to see the relative progress of the print and other important data, such as the current temperatures of the extruder and the print bed. This data is received from the control board, which is managing those components.
 3. **Host a web server?** This one was not at all necessary, but made the project a lot more fun. I thought it would be neat if a user could access the gcode sender via their browser and upload files for prints they wanted to complete. Of course, they could always write it to the micro SD card and insert it in the display. But this saved a little bit of walking, and allowed for my classmates to submit their fun prints, too.
 
 ## Conclusion

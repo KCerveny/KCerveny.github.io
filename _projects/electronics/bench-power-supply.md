@@ -54,7 +54,7 @@ Of course, this is not how this problem gets solved in professional products, bu
 
 In college, I did not have the resources to buy myself an expensive power supply so that I could have 12.5 volts for my lights. I did, however, have the resources to make one. After my exciting success [building a machine](/projects/rickety-3d-printer/) in the labs of Texas Inventionworks, I felt confident in trying to build another device.
 
-In my experience working at TIW, I was introduced to a phemominal tool called [boxes.py](https://boxes.boringplace.org/). It is an incredible piece of open source software that helps people plan laser cuts to for common objects without needing to pain-stakingly design _every single_ finger joint. It is not an understatement to say that this tool is **revolutionary** for laser cutting projects. Without it, so many ideas would be inaccessible just due to the design cost of the joints.
+In my experience working at TIW, I was introduced to a phenomenal tool called [boxes.py](https://boxes.boringplace.org/). It is an incredible piece of open source software that helps people plan laser cuts to for common objects without needing to painstakingly design _every single_ finger joint. It is not an understatement to say that this tool is **revolutionary** for laser cutting projects. Without it, so many ideas would be inaccessible just due to the design cost of the joints.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -88,7 +88,7 @@ There are a number of ways to approach the variable power supply circuit. My pri
     Left: XL4015 DC-DC Buck converter. Right: Digital voltmeter + ammeter
 </div>
 
-Roger, my mentor at Texas Inventionworks, allowed me to raid a box of old laptop chargers. I found one for a long-gone MacBook (Powerbook?) that satisfied the requirements. The chager block offered a solid 30V of DC power.
+Roger, my mentor at Texas Inventionworks, allowed me to raid a box of old laptop chargers. I found one for a long-gone MacBook (Powerbook?) that satisfied the requirements. The charger block offered a solid 30V of DC power.
 
 Here was the plan:
 
@@ -130,5 +130,5 @@ I love this project because it just works. I leveraged the excellent engineering
     </div>
 </div>
 <div class="caption">
-    Reading of the supplied power. Not bad! Supply is set to 12.5V, but the camera caught the numbers mid-refres.
+    Reading of the supplied power. Not bad! Supply is set to 12.5V, but the camera caught the numbers mid-refresh.
 </div>

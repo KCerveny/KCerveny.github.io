@@ -24,9 +24,9 @@ My hope was that I could go purchase a replacement and reprogram it to open the 
 
 So I had an opener. But how was I going to reprogram it? Of course, the first thing I had to do was crack it open to see what was going on inside.
 
-On the outside of the remote there was some text that said "FCC ID: SU7318LIPW2KC". I knew this device was an intentional transmitter, so it would have to registered with the Federeal Communications Comission to ensure it would not interfere with other devices. I looked up the device on the [public database](https://fccid.io/SU7318LIPW2KC) to see if I could find any more information about the board.
+On the outside of the remote there was some text that said "FCC ID: SU7318LIPW2KC". I knew this device was an intentional transmitter, so it would have to registered with the Federal Communications Commission to ensure it would not interfere with other devices. I looked up the device on the [public database](https://fccid.io/SU7318LIPW2KC) to see if I could find any more information about the board.
 
-Sure enough, we got a hit. And there was an astouding amount of information available about the board. The [user manual](https://fccid.io/SU7318LIPW2KC/Users-Manual/User-Manual-2103408) indicated that the transmitter operated at the ISM band of 318MHz, and also indicated that it used a Weigand 26 bit output. I also checked out the [images of the PCB](https://fccid.io/SU7318LIPW2KC/Internal-Photos/Internal-Photos-2103407) to ensure that these were the same transmitters.
+Sure enough, we got a hit. And there was an astounding amount of information available about the board. The [user manual](https://fccid.io/SU7318LIPW2KC/Users-Manual/User-Manual-2103408) indicated that the transmitter operated at the ISM band of 318MHz, and also indicated that it used a Weigand 26 bit output. I also checked out the [images of the PCB](https://fccid.io/SU7318LIPW2KC/Internal-Photos/Internal-Photos-2103407) to ensure that these were the same transmitters.
 
 Already this is a lot of information. The reports have told us on which band to listen, and what to expect when we do. The next step is to hear what the transmitter has to say.
 
@@ -43,7 +43,7 @@ Most people are familiar with the idea of tuning a radio to different frequencie
     USB software defined radio, available on Amazon.
 </div>
 
-To make the **software defined radio** (SDR) work, I installed and configured AirSpy SDR#. This tool allows a user to tune their radio to pick up different frequencies across its capable band, including normal radio stations. I tuned the SDR to 318MHz in AirSpy and pressed the button on the garage transmitter. Shockingly, the reciever was able to pick up the signal no problem!
+To make the **software defined radio** (SDR) work, I installed and configured AirSpy SDR#. This tool allows a user to tune their radio to pick up different frequencies across its capable band, including normal radio stations. I tuned the SDR to 318MHz in AirSpy and pressed the button on the garage transmitter. Shockingly, the receiver was able to pick up the signal no problem!
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -57,7 +57,7 @@ To make the **software defined radio** (SDR) work, I installed and configured Ai
     Left to right: Listening to radio with AirSpy. First scan of the garage opener's signal.
 </div>
 
-Now to dig a little deeper. By tuning the contrast, speed, and offset of the reciever, I was able to get a better picture of the actual signal. With the enhanced view, you can see that there appears to be a pattern in the signal being sent by the garage button.
+Now to dig a little deeper. By tuning the contrast, speed, and offset of the receiver, I was able to get a better picture of the actual signal. With the enhanced view, you can see that there appears to be a pattern in the signal being sent by the garage button.
 
 My hunch was that it is likely the garage open signal being sent multiple times in a row. If this is true, that would mean that **the key fob is sending the same signal on each press** of the button. If I could capture the signal from a programmed button to my garage like this, interpret it, and send it myself, I could then get back in my apartment's garage.
 
@@ -90,13 +90,13 @@ By listening in to what the garage door button was saying using our SDR, we can 
 
 As a quick aside, I want to underline just how bad this is from a security point of view. Most people will think about their home's security through their door locks, cameras, alarm and systems and think they are covered. But just how many people think about their garage as a vector of entry? Probably fewer people.
 
-However, most personal home garages use a [rolling code](https://en.wikipedia.org/wiki/Rolling_code) system, so they are not suceptible to the replay attack. This still does not make them impenetrable. If you leave the door to your house from your garage unlocked, I hope this demonstration will cause you to reconsider.
+However, most personal home garages use a [rolling code](https://en.wikipedia.org/wiki/Rolling_code) system, so they are not susceptible to the replay attack. This still does not make them impenetrable. If you leave the door to your house from your garage unlocked, I hope this demonstration will cause you to reconsider.
 
 ### Inspecting the Signal
 
-Back to the project. From AirSpy, we can see that the code being sent by these garage openers is the same on each press. At this point, we can see that the password repeats, but we cannot yet be sure what it is. In order to decypher the password, we must capture and analyze the signal sent by the opener.
+Back to the project. From AirSpy, we can see that the code being sent by these garage openers is the same on each press. At this point, we can see that the password repeats, but we cannot yet be sure what it is. In order to decipher the password, we must capture and analyze the signal sent by the opener.
 
-In AirSpy, I set the receiver format to RAW to pick up the direct data coming from the opener. After centering on the opener's band, I pressed record in Airspy and then pressed the opener's button a few times. AirSpy converts this recording into a WAV file, which can be opened in music editing software. I chose the prominent tool [Audacity](https://www.audacityteam.org/) to inspect the file.
+In AirSpy, I set the receiver format to RAW to pick up the direct data coming from the opener. After centering on the opener's band, I pressed record in AirSpy and then pressed the opener's button a few times. AirSpy converts this recording into a WAV file, which can be opened in music editing software. I chose the prominent tool [Audacity](https://www.audacityteam.org/) to inspect the file.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -127,7 +127,7 @@ Opening the file in Audacity, we can see a patten emerge. This is a much more cl
 
 With the spectrogram filters set, we can easily each active pulse is the signal, and can more easily estimate their durations. Counting the blue spikes, there were 24 pulses transmitted. Isolating a single iteration of the code, we can see the full duration takes approximately 0.14 seconds to complete.
 
-Recall from the FCC filing that the transmitter uses the Weigand 26 bit protocol. If we look up a chart of the [Weigland protocol](https://en.wikipedia.org/wiki/Wiegand_interface), we see that the first and last of the 26 bits sent are both partity bits, containing no data about the code. Since the code is bits (binary digits), we must determine the orders of the 24 1's and 0's in the code. As we repeatedly observed 24 pulses in our code, we can assume that this implementation does not include the leading and trailing parity bits.
+Recall from the FCC filing that the transmitter uses the Weigand 26 bit protocol. If we look up a chart of the [Weigand protocol](https://en.wikipedia.org/wiki/Wiegand_interface), we see that the first and last of the 26 bits sent are both parity bits, containing no data about the code. Since the code is bits (binary digits), we must determine the orders of the 24 1's and 0's in the code. As we repeatedly observed 24 pulses in our code, we can assume that this implementation does not include the leading and trailing parity bits.
 
 Looking further into the FCC documentation, the included test report mentions that the devices use a "modified [Manchester encoded modulation](https://en.wikipedia.org/wiki/Manchester_code)". In our case, the modulation of the signal defines what is considered a one or a zero. The protocol defines what those ones and zeroes mean.
 
@@ -143,7 +143,7 @@ Looking further into the FCC documentation, the included test report mentions th
     Left to right: Manchester encoding diagram. Weigand data protocol.
 </div>
 
-Using GIMP, I was able to overlay a square wave form to "clock" the pulses recieved. Since we know this is Manchester encoded, we will call each pulse on the low side of a clock period a 1, and those on the high size a 0.
+Using GIMP, I was able to overlay a square wave form to "clock" the pulses received. Since we know this is Manchester encoded, we will call each pulse on the low side of a clock period a 1, and those on the high size a 0.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -158,7 +158,7 @@ As a side note, whether a low clock represents a 1 or 0 is arbitrary. If we deci
 
 ### For Aspiring Hackers
 
-We happen to know the modulation technique because we found it in the FCC filing. But what if we didnt't? We can decode this signal if we can figure out its [modulation](https://en.wikipedia.org/wiki/Modulation). Based on our received signal, we can count out several modulation techniques right away. The pulses are all the same width, same frequency, and same duration. We also note that they all seem disjoint; no two pulses are touching.
+We happen to know the modulation technique because we found it in the FCC filing. But what if we didn't? We can decode this signal if we can figure out its [modulation](https://en.wikipedia.org/wiki/Modulation). Based on our received signal, we can count out several modulation techniques right away. The pulses are all the same width, same frequency, and same duration. We also note that they all seem disjoint; no two pulses are touching.
 
 - Amplitude Modulation (AM): Probably not. All of our pulses are the same height.
 - Frequency Modulation (FM): Also no. All of these pulses were sent on the same 318 MHz band.
@@ -177,7 +177,7 @@ In the worst-case, you would want to traverse the tree of options from the [Wiki
 
 ## Signal Interception
 
-The software defined radio that I had purchased worked at a suprisingly long distance. _In theory_, it would have been possible for someone to sit in their car near the entrance of the garage and wait for someone to press their button to enter. If that someone had been tuned to the correct frequency and recording on their SDR running on their laptop, perhaps sitting inconspicuously in the passenger seat of their car, they might be able to "sniff" a correct signal to be later decoded. Again, _in theory_.
+The software defined radio that I had purchased worked at a surprisingly long distance. _In theory_, it would have been possible for someone to sit in their car near the entrance of the garage and wait for someone to press their button to enter. If that someone had been tuned to the correct frequency and recording on their SDR running on their laptop, perhaps sitting inconspicuously in the passenger seat of their car, they might be able to "sniff" a correct signal to be later decoded. Again, _in theory_.
 
 I happened to have a roommate who was more than happy to help me with my little science project, and allowed my to record their code.
 
@@ -274,7 +274,7 @@ After programming the ATTiny45, I now had a microcontroller sending the correct 
 
 ## Reflections
 
-This project ends in the most anticlimactic fashion. Although my device worked according to plan, I never needed to use it. Turned out, my aparment happy to replace my fob for less than the cost of the Amazon SDR. Go figure.
+This project ends in the most anticlimactic fashion. Although my device worked according to plan, I never needed to use it. Turned out, my apartment was happy to replace my fob for less than the cost of the Amazon SDR. Go figure.
 
 All was not lost. I learned so much about RF, the ISM bands, FCC filings, and different means of signal modulation by creating my replacement fob. Reverse-engineering is an excellent way to learn about an unfamiliar system if you have the patience for it. The clunky perfboard setup also necessitated my first need to create a custom PCB, which I would teach myself in a [project](/projects/follow-me-lights/) later that summer.
 

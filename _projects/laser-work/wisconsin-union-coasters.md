@@ -16,7 +16,7 @@ toc:
 
 Although a simple, this is one of my favorite projects. It is reliably one of the items most commented on by my friends and family. A large part of this is because both sides of my family actually have roots in Wisconsin, although my parents met on the west coast.
 
-At the University of Wisconsin, there is a spot on lake Mendota called "the union terrace", where students have gathered for decades to drink pitchers of beer and eat Babcock icecream by the water. A lot of my family went to UW Madison, so this place holds a special place for us. I have been going to the union since I was a baby on our annual summer trips back to WI to see family.
+At the University of Wisconsin, there is a spot on lake Mendota called "the union terrace", where students have gathered for decades to drink pitchers of beer and eat Babcock ice cream by the water. A lot of my family went to UW Madison, so this place holds a special place for us. I have been going to the union since I was a baby on our annual summer trips back to WI to see family.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -30,7 +30,7 @@ At the University of Wisconsin, there is a spot on lake Mendota called "the unio
     Left to right: The UW Madison union terrace. Close-up of the famous union chairs.
 </div>
 
-On the union terrace, there are these distinctive metal chairs gathered around tables for visitors. If you have ever been to the terrace you will know them. They are _the union chairs_, wholly recognizable and distinct to this place. As such, they have become a defacto symbol for the terrace, and by extension all of the great times and memories had there. I didn't even go to school at Wisconsin and I am sentemental for them. They really are wonderful.
+On the union terrace, there are these distinctive metal chairs gathered around tables for visitors. If you have ever been to the terrace you will know them. They are _the union chairs_, wholly recognizable and distinct to this place. As such, they have become a defacto symbol for the terrace, and by extension all of the great times and memories had there. I didn't even go to school at Wisconsin and I am sentimental for them. They really are wonderful.
 
 ## Design
 

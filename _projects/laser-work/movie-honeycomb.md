@@ -54,7 +54,7 @@ One exhibit that really stuck with me was [The Last Word](https://www.wonderspac
     From left to right: Far view of "Last Word". Visitors adding messages. Close view of slips.
 </div>
 
-The intention was for anonymous invidivuals to share last words to another person, dead or alive, that they wished they had shared. I found it really touching, and have since gone to revisit.
+The intention was for anonymous individuals to share last words to another person, dead or alive, that they wished they had shared. I found it really touching, and have since gone to revisit.
 
 Aside from the artistic merit, there were a few things that stood out to me.
 
@@ -125,9 +125,6 @@ Most of the hard work was done in the design phase. Once I had my vector files, 
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include video.liquid path="assets/video/projects/laser-work/movie-honeycomb/IMG_6704.MOV" class="img-fluid rounded z-depth-1" controls=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
   </div>
 </div>
 <div class="caption">So satisfying!</div>

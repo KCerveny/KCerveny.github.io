@@ -15,7 +15,7 @@ toc:
 
 Many months prior to this project I had finished a batch of two dozen [Union Coasters](/projects/wisconsin-union-coasters/) to gift to all of my Wisconsinite family. However, my own graduation was coming up, and I was looking for a fun gift for all of the friends I had made in undergrad. After the positive reception of the UW Madison variant, I tried my hand at making some coasters for UT Austin.
 
-Unfortunately, inspiration did not strike _quite_ the same with UT. What was our "symbol"? Was there something totally recognizable to any alumn, inspiring fond memories of their time in scool? Perhaps the famous UT tower or Bevo. I settled on two icons: the Longhorns logo, and the university seal.
+Unfortunately, inspiration did not strike _quite_ the same with UT. What was our "symbol"? Was there something totally recognizable to any alum, inspiring fond memories of their time in school? Perhaps the famous UT tower or Bevo. I settled on two icons: the Longhorns logo, and the university seal.
 
 ## Design and Fabrication
 

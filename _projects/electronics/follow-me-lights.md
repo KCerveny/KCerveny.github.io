@@ -71,7 +71,7 @@ Fortunately, these boards actually worked exactly as intended. Not only did thes
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v1/v1-assembled.png" title="Comparisson of perfboard to V1" alt="Comparisson of perfboard to V1" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/electronics/follow-me-lights/v1/v1-assembled.png" title="Comparison of perfboard to V1" alt="Comparison of perfboard to V1" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
 </div>
 <div class="caption">

@@ -42,7 +42,7 @@ toc:
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/just-assembled.jpg" class="img-fluid rounded z-depth-1" title="Arcade just assembled, checking buttons" alt="freshly assembled" zoomable="true" %}</swiper-slide>
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/paint-prep.jpg" class="img-fluid rounded z-depth-1" title="Wrapping arcade for paint preparation" alt="Arcade paint prep" zoomable="true" %}</swiper-slide>
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/paint-prep2.jpg" class="img-fluid rounded z-depth-1" title="Wrapping arcade top for paint preparation alt" alt="Arcade paint prep 2" zoomable="true" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/spraypaint.jpg" class="img-fluid rounded z-depth-1" title="Arcade outside, ready for painting" alt="Arcade spraypaint imminent" zoomable="true" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/spraypaint.jpg" class="img-fluid rounded z-depth-1" title="Arcade outside, ready for painting" alt="Arcade spray paint imminent" zoomable="true" %}</swiper-slide>
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/projects/floating-arcade/fully-painted.jpg" class="img-fluid rounded z-depth-1" title="Arcade post painting, awaiting hardware" alt="Arcade post painting" zoomable="true" %}</swiper-slide>
 </swiper-container>
 <div class="caption">

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Minimalist Keyrack
+title: Minimalist Key Rack
 description: Writeup coming soon!
 img: assets/img/projects/laser-work/minimalist-keyrack/keyrack-thumb.jpg
 importance: 3

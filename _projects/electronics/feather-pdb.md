@@ -42,7 +42,7 @@ I think this project is notable because it was the exact opposite. I went in alr
 
 Now, I had to solve a a much harder question. **How do I connect this much DC power without it going up in flames?**
 
-Because there were only two nets on this board (Power In and Ground), I decided to make this a two-sided PCB in which all of the top layer was a ground power plane and the opposite was power. Doing so simplified the connections considerably, and expanded the ammount of copper that each net could access.
+Because there were only two nets on this board (Power In and Ground), I decided to make this a two-sided PCB in which all of the top layer was a ground power plane and the opposite was power. Doing so simplified the connections considerably, and expanded the amount of copper that each net could access.
 
 But this did not solve all of my concerns.
 

@@ -13,7 +13,7 @@ toc:
 
 ## Pinecone Encounter
 
-During a study abroad trip to Denmark in college, my girlfriend Barna and I went to visit the Lego House in Billund. On our way back to Copenhagen we stopped at a cafe in Odense for a bite. Once entering, we noticed that the cieling was dotted with these whimsical pinecone chaneliers. They were extraordinary. Fun, modern, while still feeling cozy, the design was just _so Danish_. And I had to have one just like it.
+During a study abroad trip to Denmark in college, my girlfriend Barna and I went to visit the Lego House in Billund. On our way back to Copenhagen we stopped at a cafe in Odense for a bite. Once entering, we noticed that the ceiling was dotted with these whimsical pinecone chandelier . They were extraordinary. Fun, modern, while still feeling cozy, the design was just _so Danish_. And I had to have one just like it.
 
 <div class="row">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -65,14 +65,14 @@ Because a professional packed up the vector files, this was about as simple of a
     </div>
 </div>
 
-Look at it! I think that is so fun. The bulb under it is low wattage, so it gives off a warm glow at night. Not enough to use it as a standalone lamp, but it really creates a cozy atmosphere.
+Look at it! I think that is so fun. The bulb under it is low wattage, so it gives off a warm glow at night. Not enough to use it as a stand-alone lamp, but it really creates a cozy atmosphere.
 
 ## Lesson Learned
 
 I thought this project was worth a writeup for two reasons.
 
 1. I wanted to brag about my cool lamp.
-2. A lesson for DIYers like me.
+2. A lesson for DIY-ers like me.
 
 Now that I am done gloating about my sweet home decor, perhaps some reflection. For many creators, there is a strong impulse to create everything. With some experience, you will begin to walk around and start pondering how everyday objects were made. On occasion, you might come across something you like and think "I could make that!".
 

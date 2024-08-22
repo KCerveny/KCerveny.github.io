@@ -17,6 +17,8 @@ clickable
 clickin
 cosplay
 Darth
+digi
+Digi
 Docker
 Dockerfile
 endstop
@@ -67,6 +69,8 @@ PDB
 perfboard
 perfboards
 photoshoot
+physica
+Physica
 pikmin
 Pikmin
 pinout

@@ -20,6 +20,7 @@ svg
 toc
 uint
 wav
+WAV
 webfonts
 webp
 woff

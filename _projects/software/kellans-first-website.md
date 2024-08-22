@@ -8,6 +8,8 @@ category: software
 toc:
   sidebar: right
   scope: h4
+repository: KCerveny/kellans-first-website
+project_site: https://kellancerveny.com/kellans-first-website/
 ---
 
 ## From Unlikely Circumstances

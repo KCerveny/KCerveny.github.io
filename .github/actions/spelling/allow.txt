@@ -11,8 +11,10 @@ Burak
 cerveny
 Cerveny
 Chromebook
+Chuy
 Cidercade
 clickable
+clickin
 cosplay
 Darth
 Docker
@@ -38,10 +40,15 @@ google
 Google
 GPIO
 hackable
+headshot
 Ikea
 inspo
 Inventionworks
+Junebug
+junie
 JLC
+kcerveny
+KCerveny
 kellan
 kellancerveny
 Kellan
@@ -67,6 +74,7 @@ pinouts
 Powerbook
 PWM
 rastering
+selfie
 screenshot
 Screenshot
 sdr
@@ -82,4 +90,5 @@ wisco
 Wikipedia
 Wikimedia
 Wonderspaces
+Zilker
 zoomable

@@ -1,4 +1,5 @@
 Academicons
+aut
 autoplay
 amm
 amz
@@ -6,9 +7,11 @@ config
 endfor
 endraw
 extiw
+faciam
 GSender
 html
 img
+inveniam
 keyrack
 LIPW
 Moto
@@ -19,6 +22,7 @@ spraypaint
 svg
 toc
 uint
+viam
 wav
 webfonts
 webp

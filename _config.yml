@@ -111,7 +111,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  Feel welcome to reach out to me through LinkedIn.
+  Feel welcome to reach out to me through my LinkedIn.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -633,14 +633,14 @@ jekyll_get_json:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
-  - work
+  # - work
+  # - volunteer
   - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
+  # - awards
+  # - certificates
+  # - publications
+  # - skills
   - languages
-  - interests
-  - references
+  # - interests
+  # - references
+  - projects

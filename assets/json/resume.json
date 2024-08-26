@@ -31,7 +31,7 @@
       "location": "Austin, Texas",
       "url": "https://www.ece.utexas.edu/",
       "area": "Electrical and Computer Engineering",
-      "studyType": "B.S. Electical Engineering",
+      "studyType": "B.S. Electrical Engineering",
       "startDate": "2017-09-27",
       "endDate": "2022-04-21",
       "score": "3.1",
@@ -68,8 +68,8 @@
       "url": "/projects/follow-me-lights/",
       "startDate": "2020-06-01",
       "endDate": "2020-09-21",
-      "summary": "The summer COVID-19 broke out, [Amin Hamidi](https://www.linkedin.com/in/amin-hamidi-a02650157) and I developed a motion detecting light product from home.",
-      "highlights": ["Developed custom harware and firmware for novel lighting product", "Reduced product cost by 50% and assembly time by 90%."]
+      "summary": "The summer COVID-19 broke out, <a href='https://www.linkedin.com/in/amin-hamidi-a02650157'>Amin Hamidi</a> and I developed a motion detecting light product from home.",
+      "highlights": ["Developed custom hardware and firmware for novel lighting product", "Reduced product cost by 50% and assembly time by 90%."]
     },
     {
       "name": "Texas Inventionworks",
@@ -96,18 +96,31 @@
         "Developed a novel computer-vision analysis tool, resulting in a 32x increase in product attribute data yield while maintaining 97% accuracy. | OpenCV, PIL, SKImage, Python",
         "Prototyped frontend MVP using React, Node.js, Next.js, MUI, and Redux on AWS Amplify in 7 weeks."
       ]
+    },
+    {
+      "name": "Arrow Air",
+      "position": "DevOps Engineer, Embedded Systems Engineer",
+      "url": "https://arrowair.com/",
+      "startDate": "2024-04-10",
+      "endDate": "",
+      "summary": "Performing embedded systems engineering in drone development for a Web 3.0 drone company in west Texas.",
+      "highlights": [
+        "Developed an efficient <a target='_blank' href='/projects/feather-pdb/'>power delivery board</a> for test drones, reducing flight load by two pounds.",
+        "Strengthened Terraform GitHub management suite, accelerating contribution feedback cycle for 45% of the team.",
+        "Pioneered documentation and discussion platforms, including Discourse hosting, development of internal governance sites, remote-first IP development, and GitHub actions CI/CD, all in 40% of allocated budget and 70% allowed time."
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
+      "organization": "",
+      "location": "",
+      "position": "",
+      "url": "",
       "startDate": "2014-04-01",
       "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "summary": "",
+      "highlights": []
     }
   ],
   "certificates": [
@@ -163,7 +176,7 @@
       "name": "Embedded Systems",
       "level": "Junior",
       "icon": "fa-solid fa-robot",
-      "keywords": ["Docker", "Terraform", "GitHub Actions"]
+      "keywords": ["MQTT", "KiCAD", "EasyEDA", "Arduino", "AWS IoT"]
     },
     {
       "name": "Web Development",

@@ -25,6 +25,19 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "The University of Texas at Austin",
+      "location": "Austin, Texas",
+      "url": "https://www.ece.utexas.edu/",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "B.S. EE",
+      "startDate": "2017-09-27",
+      "endDate": "2022-04-21",
+      "score": "3.1",
+      "courses": ["Operating Systems", "Embedded Systems Lab", "Software Lab", "Automatic Control Systems"]
+    }
+  ],
   "work": [
     {
       "name": "Chevron",
@@ -37,6 +50,15 @@
         "Provisioned IaaS and PaaS applications on MS Azure for the ServiceNow initiative through Ansible playbooks and implemented a DSC framework for automated monitoring",
         "Developed a comprehensive dashboard for tracking critical roles in the CI/CD pipeline, optimizing build and deployment process for enhanced system reliability."
       ]
+    },
+    {
+      "name": "Oversimplified Tech",
+      "position": "Embedded Systems Engineer",
+      "url": "/projects/follow-me-lights/",
+      "startDate": "2020-06-01",
+      "endDate": "2020-09-21",
+      "summary": "The summer COVID-19 broke out, [Amin Hamidi](https://www.linkedin.com/in/amin-hamidi-a02650157) and I developed a motion detecting light product from home.",
+      "highlights": ["Developed custom harware and firmware for novel lighting product", "Reduced product cost by 50% and assembly time by 90%."]
     },
     {
       "name": "Texas Inventionworks",
@@ -75,19 +97,6 @@
       "endDate": "2015-07-01",
       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
-  "education": [
-    {
-      "institution": "The University of Texas at Austin",
-      "location": "Austin, Texas",
-      "url": "https://www.ece.utexas.edu/",
-      "area": "Electrical and Computer Engineering",
-      "studyType": "B.S. EE",
-      "startDate": "2017-09-27",
-      "endDate": "2022-04-21",
-      "score": "3.1",
-      "courses": ["Operating Systems", "Embedded Systems Lab", "Software Lab", "Automatic Control Systems"]
     }
   ],
   "certificates": [

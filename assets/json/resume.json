@@ -31,11 +31,22 @@
       "location": "Austin, Texas",
       "url": "https://www.ece.utexas.edu/",
       "area": "Electrical and Computer Engineering",
-      "studyType": "B.S. EE",
+      "studyType": "B.S. Electical Engineering",
       "startDate": "2017-09-27",
       "endDate": "2022-04-21",
       "score": "3.1",
       "courses": ["Operating Systems", "Embedded Systems Lab", "Software Lab", "Automatic Control Systems"]
+    },
+    {
+      "institution": "UT Austin McCombs School of Business",
+      "location": "Austin, Texas",
+      "url": "https://www.mccombs.utexas.edu/undergraduate/business-options/mccombs-summer-institute/",
+      "area": "Business Administration",
+      "studyType": "Minor, Business",
+      "startDate": "2018-05-14",
+      "endDate": "2018-09-27",
+      "score": "3.8",
+      "courses": []
     }
   ],
   "work": [

@@ -279,7 +279,7 @@ defaults:
 
 sass:
   style: expanded # compressed # <-- much slower
-  sourcemap: development
+  sourcemap: development # do not generate in prod
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
@@ -313,8 +313,8 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Cerveny]
+  first_name: [Kellan]
 
   style: apa
   locale: en
@@ -633,14 +633,14 @@ jekyll_get_json:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
-  # - work
-  # - volunteer
+  - work
   - education
-  # - awards
+  - skills
+  - projects
+  - awards
+  - languages
+  # - volunteer
   # - certificates
   # - publications
-  # - skills
-  - languages
   # - interests
   # - references
-  - projects

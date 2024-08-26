@@ -10,12 +10,14 @@ extiw
 faciam
 GSender
 html
+Iaa
 img
 inveniam
 keyrack
 LIPW
 Moto
 mov
+Paa
 pdf
 RCWL
 spraypaint

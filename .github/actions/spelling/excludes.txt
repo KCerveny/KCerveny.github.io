@@ -17,7 +17,7 @@ Gemfile
 \.mp4$
 \.css
 \.scss
-\.js
+\.js$
 \.min
 \.map
 \.t$

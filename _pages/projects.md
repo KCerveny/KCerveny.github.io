@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of things I am creating.
+description: A growing collection of my creations.
 nav: true
 nav_order: 3
 display_categories: [electronics, software, design, laser-work, fun]

@@ -133,7 +133,7 @@ Looking further into the FCC documentation, the included test report mentions th
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/electronics/hacked-garage/Manchester-coding.webp" title="Manchester encoding diagram" alt="Manchester encoding diagram" class="img-fluid rounded z-depth-1" zoomable="true" %}
+        {% include figure.liquid path="assets/img/projects/electronics/hacked-garage/Manchester-coding.jpg" title="Manchester encoding diagram" alt="Manchester encoding diagram" class="img-fluid rounded z-depth-1" zoomable="true" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/electronics/hacked-garage/weigand.jpg" title="Weigand data protocol" alt="Weigand data protocol" class="img-fluid rounded z-depth-1" zoomable="true" %}

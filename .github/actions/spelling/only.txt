@@ -3,3 +3,4 @@
 ^!!_news\/
 ^_pages\/
 ^_projects\/
+^assets\/json\/resume.json

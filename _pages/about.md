@@ -62,5 +62,5 @@ When I am not creating or learning, you will probably find me outside. Any chanc
    
 </div>
 <div class="caption">
-    Its all about family and friends. Consider this my full social media presence.
+    It's all about family and friends. Consider this my full social media presence.
 </div>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Python Product Image Segmentation
-date: 2024-08-29 08:00:00-0400
-description: Removing an product's background using image segmentation
+title: Color K-Means Clustering
+date: 2024-08-30 08:00:00-0400
+description: Finding an image's dominant colors using K-Means Clustering
 tags: code computer-vision python
 categories: coding
 giscus_comments: false
@@ -14,7 +14,7 @@ related_posts: true
 
 ## Context
 
-This post is part of an ongoing series discussing the [product color analysis tool](/projects/color-detection) I designed while working at Furnisearch. That project writeup was beginning to get too long, so I split the technical discussion into a series of blog posts.
+This post is part of an ongoing series discussing the [product color analysis tool](/projects/color-detection) I designed while working at Furnisearch. This entry is the second of the series.
 
 If you are interested in the high-level details of the project, you can go directly to the [project writeup](/projects/color-detection). I recommend you start there, at least to read the background and motivations of the problem this tool solves.
 
